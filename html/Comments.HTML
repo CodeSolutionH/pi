@@ -2,34 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Comments</title>
-    <link rel="stylesheet" href="Styles - CSS.CSS">
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #007400; /* Make comment color green */
+        }
+        .example-output {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .hidden-comment {
+            color: #999;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="Basic Examples.HTML">Home</a> |
-        <a href="Elements.HTML">Elements</a> |
-        <a href="Comments.HTML">Comments</a>
-    </nav>
-    <main>
+    <div class="container">
         <h1>HTML Comments</h1>
-        <p>Comments in HTML are not displayed in the browser. They are used to leave notes or explanations in the code for yourself or others.</p>
-        <h2>Example:</h2>
-        <pre><code>&lt;!-- This is a comment --&gt;
-&lt;p&gt;This is visible text.&lt;/p&gt;
-</code></pre>
-        <h2>How to Use:</h2>
+        <p>HTML comments are not displayed in the browser, but they can help document your HTML source code. This is useful for leaving notes for yourself or other developers.</p>
+
+        <h2>Comment Tag Syntax</h2>
+        <p>You can add comments to your HTML source by using the following syntax:</p>
+        <pre><code>&lt;!-- Write your comments here --&gt;</code></pre>
+        <p>Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+
+        <h2>Examples</h2>
+
+        <h3>1. Commenting Out Text</h3>
+        <p>You can place comments anywhere in your HTML document. Here is a comment placed within a paragraph.</p>
+        <div class="example-output">
+            <p>This is a paragraph.</p>
+            <!-- This is a comment that will not be displayed -->
+            <p>This is another paragraph.</p>
+        </div>
+        <p><strong>Code:</strong></p>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;!-- This is a comment that will not be displayed --&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;</code></pre>
+
+        <h3>2. Commenting Out Code (Debugging)</h3>
+        <p>Comments are also great for debugging HTML. You can comment out lines of code to see how a page renders without them, helping you find errors.</p>
+        <div class="example-output">
+            <p>This paragraph is visible.</p>
+            <!--
+            <p>This paragraph is commented out and will not be seen.</p>
+            <img src="some_image.jpg" alt="A hidden image">
+            -->
+            <p>This paragraph is also visible.</p>
+        </div>
+        <p><strong>Code:</strong></p>
+        <pre><code>&lt;p&gt;This paragraph is visible.&lt;/p&gt;
+
+&lt;!--
+&lt;p&gt;This paragraph is commented out and will not be seen.&lt;/p&gt;
+&lt;img src="some_image.jpg" alt="A hidden image"&gt;
+--&gt;
+
+&lt;p&gt;This paragraph is also visible.&lt;/p&gt;</code></pre>
+
+        <h3>3. Conditional Comments (for Internet Explorer)</h3>
+        <p>In the past, special comments were used to target specific versions of the Internet Explorer (IE) browser. This is now largely obsolete but is good to recognize in older codebases.</p>
+        <p><strong>Code Example (Not rendered by modern browsers):</strong></p>
+        <pre><code>&lt;!--[if IE 9]&gt;
+    &lt;p&gt;This content is only displayed in Internet Explorer 9.&lt;/p&gt;
+    &lt;link rel="stylesheet" type="text/css" href="ie9.css"&gt;
+&lt;![endif]--&gt;</code></pre>
+
+        <h2>Important Notes</h2>
         <ul>
-            <li>Start a comment with <code>&lt;!--</code></li>
-            <li>Write your comment</li>
-            <li>End the comment with <code>--&gt;</code></li>
+            <li>Comments are not displayed by the browser.</li>
+            <li>They can be used to explain your code, which can help you when you edit the source code at a later date.</li>
+            <li>You cannot have a comment inside another comment.</li>
+            <li>Comments are visible to anyone who views the page source code. Do not put sensitive information in comments.</li>
         </ul>
-    </main>
-    <footer>
-        <p>Learn more about HTML in this guide.</p>
-    </footer>
-    <script src="HTML JavaScript.js"></script>
+
+    </div>
 </body>
 </html>
-
-

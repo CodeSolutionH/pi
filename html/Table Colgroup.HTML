@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Colgroup</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* --- Colgroup Styling --- */
+        #table-colgroup .group1 { background-color: #D6EEEE; }
+        #table-colgroup .group2 { background-color: #F2D7D5; }
+
+        #table-visibility col.hidden-col {
+            visibility: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML <code>&lt;colgroup&gt;</code> and <code>&lt;col&gt;</code> Elements</h1>
+        <p>The <code>&lt;colgroup&gt;</code> element is used to group one or more columns in a table for formatting. It is a container for one or more <code>&lt;col&gt;</code> elements.</p>
+        <p>This is useful for applying styles to entire columns, instead of having to repeat the styles for each cell in that column.</p>
+        <p>The <code>&lt;colgroup&gt;</code> tag must be a child of a <code>&lt;table&gt;</code> element, after any <code>&lt;caption&gt;</code> elements and before any <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, and <code>&lt;tr&gt;</code> elements.</p>
+
+        <h2>Styling Columns</h2>
+        <p>In this example, we use <code>&lt;colgroup&gt;</code> and <code>&lt;col&gt;</code> to style the first two columns and the third column of a table differently.</p>
+
+        <h3>Example:</h3>
+        <table id="table-colgroup">
+            <colgroup>
+                <col span="2" class="group1">
+                <col class="group2">
+            </colgroup>
+            <tr>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>3476896</td>
+                <td>My first HTML</td>
+                <td>$53</td>
+            </tr>
+            <tr>
+                <td>5869207</td>
+                <td>My first CSS</td>
+                <td>$49</td>
+            </tr>
+        </table>
+
+        <h3>The Code:</h3>
+        <pre><code>&lt;table id="table-colgroup"&gt;
+  &lt;colgroup&gt;
+    &lt;!-- The "span" attribute makes this apply to the first 2 columns --&gt;
+    &lt;col span="2" class="group1"&gt;
+    &lt;!-- This applies to the 3rd column --&gt;
+    &lt;col class="group2"&gt;
+  &lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;th&gt;ISBN&lt;/th&gt;
+    &lt;th&gt;Title&lt;/th&gt;
+    &lt;th&gt;Price&lt;/th&gt;
+  &lt;/tr&gt;
+  ...
+&lt;/table&gt;
+
+&lt;style&gt;
+  #table-colgroup .group1 { background-color: #D6EEEE; }
+  #table-colgroup .group2 { background-color: #F2D7D5; }
+&lt;/style&gt;</code></pre>
+
+        <p>The <code>&lt;col&gt;</code> element is an empty tag. The <code>span</code> attribute specifies how many consecutive columns the <code>&lt;col&gt;</code> element should span.</p>
+
+        <h2>Hiding Columns</h2>
+        <p>You can use the <code>visibility: collapse;</code> CSS property on a <code>&lt;col&gt;</code> element to hide a column from the table. Note that this may not be fully supported in all browsers, and using other methods might be more reliable if you need to hide columns dynamically.</p>
+
+        <h3>Example:</h3>
+        <table id="table-visibility">
+            <colgroup>
+                <col>
+                <col class="hidden-col">
+                <col>
+            </colgroup>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name (Hidden)</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Smith</td>
+                <td>25</td>
+            </tr>
+        </table>
+
+        <h3>The Code:</h3>
+        <pre><code>&lt;table id="table-visibility"&gt;
+  &lt;colgroup&gt;
+    &lt;col&gt;
+    &lt;col class="hidden-col"&gt;
+    &lt;col&gt;
+  &lt;/colgroup&gt;
+  ...
+&lt;/table&gt;
+
+&lt;style&gt;
+  #table-visibility col.hidden-col {
+    visibility: collapse;
+  }
+&lt;/style&gt;</code></pre>
+
+        <h2>Permitted CSS Properties</h2>
+        <p>Not all CSS properties can be applied to columns. You can only use properties that affect the column as a whole:</p>
+        <ul>
+            <li><code>width</code></li>
+            <li><code>border</code></li>
+            <li><code>background-color</code></li>
+            <li><code>visibility</code></li>
+        </ul>
+
+    </div>
+</body>
+</html>

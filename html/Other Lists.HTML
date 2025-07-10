@@ -2,42 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML Description Lists</title>
-    <link rel="stylesheet" href="Styles - CSS.CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Other List Types</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example {
+            border: 1px solid #ccc;
+            padding: 0 20px 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        dl, ul {
+            background-color: #f9f9f9;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 4px;
+        }
+        dt {
+            font-weight: bold;
+            color: #555;
+        }
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        /* Style for horizontal list */
+        .horizontal-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        .horizontal-list li {
+            float: left;
+        }
+        .horizontal-list li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .horizontal-list li a:hover {
+            background-color: #111;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="Basic Examples.HTML">Home</a> |
-        <a href="Lists.HTML">Lists</a> |
-        <a href="Other Lists.HTML">Description Lists</a>
-    </nav>
-    <main>
-        <h1>HTML Description Lists</h1>
-        <p>A <strong>description list</strong> is used for pairs of terms and descriptions. Use the <code>&lt;dl&gt;</code> element for the list, <code>&lt;dt&gt;</code> for each term, and <code>&lt;dd&gt;</code> for each description.</p>
-        <h2>Example:</h2>
-        <pre><code>&lt;dl&gt;
-  &lt;dt&gt;HTML&lt;/dt&gt;
-  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
-  &lt;dt&gt;CSS&lt;/dt&gt;
-  &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-        <dl>
-            <dt>HTML</dt>
-            <dd>HyperText Markup Language</dd>
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheets</dd>
-        </dl>
-        <h2>Best Practices:</h2>
+    <div class="container">
+        <h1>HTML Other List Types</h1>
+        <p>Besides the common ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>) lists, HTML supports description lists. Additionally, CSS can be used to style lists in many different ways, such as creating horizontal navigation menus.</p>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>HTML Description Lists (<code>&lt;dl&gt;</code>)</h2>
+        <p>A description list is a list of terms, with a description of each term. This is also known as a definition list.</p>
         <ul>
-            <li>Use description lists for glossaries, definitions, or metadata.</li>
-            <li>Pair each <code>&lt;dt&gt;</code> with a <code>&lt;dd&gt;</code> for clarity.</li>
+            <li>The <code>&lt;dl&gt;</code> tag defines the description list.</li>
+            <li>The <code>&lt;dt&gt;</code> tag defines the term (the name).</li>
+            <li>The <code>&lt;dd&gt;</code> tag describes or defines the term.</li>
         </ul>
-    </main>
-    <footer>
-        <p>Learn more about HTML in this guide.</p>
-    </footer>
-    <script src="HTML JavaScript.js"></script>
+
+        <h3>Example:</h3>
+        <div class="example">
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- A hot, dark beverage made from roasted coffee beans.</dd>
+                <dt>Milk</dt>
+                <dd>- A white, cold beverage produced by mammals.</dd>
+                <dt>Tea</dt>
+                <dd>- A hot beverage made by infusing dried, crushed leaves in hot water.</dd>
+            </dl>
+        </div>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;dl&gt;
+  &lt;dt&gt;Coffee&lt;/dt&gt;
+  &lt;dd&gt;- A hot, dark beverage made from roasted coffee beans.&lt;/dd&gt;
+  &lt;dt&gt;Milk&lt;/dt&gt;
+  &lt;dd&gt;- A white, cold beverage produced by mammals.&lt;/dd&gt;
+  &lt;dt&gt;Tea&lt;/dt&gt;
+  &lt;dd&gt;- A hot beverage made by infusing dried, crushed leaves in hot water.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Styling Lists with CSS</h2>
+        <p>CSS provides many properties to style lists. You can change the marker type, use images for markers, or remove them entirely.</p>
+
+        <h3>Horizontal List for Navigation</h3>
+        <p>One of the most common uses of styled lists is to create a horizontal navigation menu from a standard HTML unordered list.</p>
+
+        <h3>Example:</h3>
+        <div class="example">
+            <p>This navigation bar is an unordered list styled with CSS:</p>
+            <ul class="horizontal-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+
+        <h4>The Code:</h4>
+        <p><strong>HTML:</strong></p>
+        <pre><code>&lt;ul class="horizontal-list"&gt;
+  &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <p><strong>CSS:</strong></p>
+        <pre><code>.horizontal-list {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Contain floats */
+    background-color: #333;
+}
+
+.horizontal-list li {
+    float: left; /* Make list items appear side-by-side */
+}
+
+.horizontal-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontal-list li a:hover {
+    background-color: #111;
+}</code></pre>
+
+    </div>
 </body>
 </html>
-
-

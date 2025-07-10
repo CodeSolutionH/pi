@@ -2,38 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Headings</title>
-    <link rel="stylesheet" href="Styles - CSS.CSS">
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #333;
+            font-family: 'Georgia', serif;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example-output {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .important {
+            background-color: #fffbe6;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="Basic Examples.HTML">Home</a> |
-        <a href="Elements.HTML">Elements</a> |
-        <a href="Headings.HTML">Headings</a> |
-        <a href="Paragraphs.HTML">Paragraphs</a>
-    </nav>
-    <main>
+    <div class="container">
         <h1>HTML Headings</h1>
-        <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> (most important) to <code>&lt;h6&gt;</code> (least important). Headings help structure your content and improve accessibility and SEO.</p>
-        <h2>Examples:</h2>
-        <pre><code>&lt;h1&gt;Main Title&lt;/h1&gt;
-&lt;h2&gt;Section Title&lt;/h2&gt;
-&lt;h3&gt;Subsection&lt;/h3&gt;
-&lt;h4&gt;Detail&lt;/h4&gt;
-&lt;h5&gt;Note&lt;/h5&gt;
-&lt;h6&gt;Fine Print&lt;/h6&gt;</code></pre>
-        <h2>Rendered Output:</h2>
-        <h1>Main Title</h1>
-        <h2>Section Title</h2>
-        <h3>Subsection</h3>
-        <h4>Detail</h4>
-        <h5>Note</h5>
-        <h6>Fine Print</h6>
-        <p>Use headings in order and avoid skipping levels for best practices.</p>
-    </main>
-    <footer>
-        <p>Learn more about HTML in this guide.</p>
-    </footer>
-    <script src="HTML JavaScript.js"></script>
+        <p>HTML headings are titles or subtitles that you want to display on a webpage. They are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags.</p>
+        <p><code>&lt;h1&gt;</code> defines the most important heading, while <code>&lt;h6&gt;</code> defines the least important heading.</p>
+
+        <h2>Headings Example</h2>
+        <p>This example shows all the default heading levels in HTML.</p>
+        <div class="example-output">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+
+        <h3>The Code</h3>
+        <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+
+        <div class="important">
+            <p><strong>Important:</strong> Browsers automatically add some white space (a margin) before and after a heading. The size and boldness of the font decrease from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</p>
+        </div>
+
+        <h2>Why Headings are Important</h2>
+        <ul>
+            <li><strong>Search Engine Optimization (SEO):</strong> Search engines use headings to index the structure and content of your web pages. A well-structured document with clear headings can rank better in search results.</li>
+            <li><strong>Accessibility:</strong> Screen readers use headings to help visually impaired users navigate a web page. A logical heading structure is crucial for accessibility.</li>
+            <li><strong>Readability:</strong> Headings break up the text and make the content easier to read and scan for all users.</li>
+        </ul>
+
+        <h2>Best Practices</h2>
+        <ul>
+            <li>Use only one <code>&lt;h1&gt;</code> per page. It should be the main title of the page content.</li>
+            <li>Use headings in sequential order without skipping levels (e.g., go from an <code>&lt;h2&gt;</code> to an <code>&lt;h3&gt;</code>, not directly to an <code>&lt;h4&gt;</code>).</li>
+            <li>Use headings for structure, not just to make text big or bold. For styling, use CSS properties like <code>font-size</code> and <code>font-weight</code> instead.</li>
+        </ul>
+
+        <h2>Customizing Heading Styles</h2>
+        <p>You can easily change the default appearance of headings using CSS.</p>
+        <pre><code>&lt;style&gt;
+  h1 {
+    color: steelblue;
+    font-size: 3em; /* 3 times the base font size */
+    text-align: center;
+  }
+  h2 {
+    color: #555;
+    border-bottom: 1px solid #ccc;
+  }
+&lt;/style&gt;</code></pre>
+
+        <div class="example-output">
+            <h1 style="color: steelblue; font-size: 3em; text-align: center;">A Custom Styled H1</h1>
+            <h2 style="color: #555; border-bottom: 1px solid #ccc;">A Custom Styled H2</h2>
+        </div>
+
+    </div>
 </body>
 </html>

@@ -1,21 +1,11 @@
-// HTML JavaScript.js
-// This file explains how to use JavaScript in HTML and provides a simple example.
+// This is a simple JavaScript file to be used with HTML JavaScript.HTML
 
-// To use JavaScript in HTML, include a <script> tag:
-// <script src="HTML JavaScript.js"></script>
+// A function to change the text of an element
+function changeText() {
+  document.getElementById("demo").innerHTML = "The text was changed by an external script!";
+}
 
-// Example: Show an alert when the page loads
-window.onload = function() {
-    // Uncomment the next line to see an alert when the page loads
-    // alert('Welcome to the HTML Explanation Website!');
-};
-
-// Example: Add interactivity
-document.addEventListener('DOMContentLoaded', function() {
-    var nav = document.querySelector('nav');
-    if(nav) {
-        nav.addEventListener('click', function() {
-            console.log('Navigation clicked!');
-        });
-    }
-});
+// A function to show an alert
+function showAlert() {
+  alert("Hello from an external JavaScript file!");
+}

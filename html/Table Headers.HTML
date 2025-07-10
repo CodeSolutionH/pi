@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Headers</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        /* Default style for th */
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+        }
+        thead th {
+            background-color: #333;
+            color: white;
+        }
+        tfoot td {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+        caption {
+            caption-side: bottom;
+            padding: 10px;
+            font-style: italic;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Table Headers, Footers, and Captions</h1>
+        <p>HTML tables can be structured with headers, a body, and a footer section to provide better semantics and allow for more advanced styling and functionality (like scrolling the body independently of the header).</p>
+
+        <h2>The <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code> Elements</h2>
+        <ul>
+            <li>The <strong><code>&lt;thead&gt;</code></strong> element is used to group header content in an HTML table.</li>
+            <li>The <strong><code>&lt;tbody&gt;</code></strong> element is used to group the body content in an HTML table.</li>
+            <li>The <strong><code>&lt;tfoot&gt;</code></strong> element is used to group footer content in an HTML table.</li>
+        </ul>
+        <p>These elements do not affect the layout of the table by default, but they provide important semantic information and can be targeted by CSS and JavaScript.</p>
+        <p><strong>Note:</strong> The <code>&lt;thead&gt;</code> must appear before <code>&lt;tbody&gt;</code> and <code>&lt;tfoot&gt;</code> within the <code>&lt;table&gt;</code> element.</p>
+
+        <h3>Example of a Structured Table:</h3>
+        <table>
+            <caption>Monthly Savings Report</caption>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$80</td>
+                </tr>
+                 <tr>
+                    <td>March</td>
+                    <td>$120</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>$300</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;table&gt;
+  &lt;caption&gt;Monthly Savings Report&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Month&lt;/th&gt;
+      &lt;th&gt;Savings&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;January&lt;/td&gt;
+      &lt;td&gt;$100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;February&lt;/td&gt;
+      &lt;td&gt;$80&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Total&lt;/td&gt;
+      &lt;td&gt;$300&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+
+        <h2>The <code>&lt;th&gt;</code> Element (Table Header Cell)</h2>
+        <p>The <code>&lt;th&gt;</code> element defines a cell as a header for a group of table cells. By default, the text in <code>&lt;th&gt;</code> elements is bold and centered (though this can be changed with CSS).</p>
+        <p>You can have headers for columns (most common) or for rows.</p>
+
+        <h3>Vertical Headers (Row Headers)</h3>
+        <table>
+            <tr>
+                <th>Firstname:</th>
+                <td>Henry</td>
+            </tr>
+            <tr>
+                <th>Lastname:</th>
+                <td>Ford</td>
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <td>80</td>
+            </tr>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;tr&gt;
+  &lt;th&gt;Firstname:&lt;/th&gt;
+  &lt;td&gt;Henry&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+
+        <h2>The <code>&lt;caption&gt;</code> Element</h2>
+        <p>The <code>&lt;caption&gt;</code> tag defines a table caption. It must be inserted immediately after the <code>&lt;table&gt;</code> tag. By default, the caption is center-aligned above the table, but this can be changed with the CSS <code>caption-side</code> property.</p>
+
+    </div>
+</body>
+</html>

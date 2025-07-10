@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic Elements</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+            background-color: #fdfdfd;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .semantic-layout * {
+            display: block;
+            border: 2px solid #73AD21;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            color: #555;
+            text-align: center;
+        }
+        .semantic-layout header { background-color: #A2D9CE; }
+        .semantic-layout nav { background-color: #FAD7A0; }
+        .semantic-layout section { background-color: #F1948A; }
+        .semantic-layout article { background-color: #AED6F1; margin: 15px; }
+        .semantic-layout aside { background-color: #D7BDE2; }
+        .semantic-layout footer { background-color: #ABB2B9; }
+
+        .important {
+            background-color: #eaf5ff;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Semantic Elements</h1>
+        <p>Semantic elements are HTML elements that clearly describe their meaning in a human- and machine-readable way. They accurately describe the purpose of the element and the type of content that is inside them.</p>
+        <p>Examples of non-semantic elements: <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code>. They tell nothing about their content.</p>
+        <p>Examples of semantic elements: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code>, and <code>&lt;article&gt;</code>. They clearly define their content.</p>
+
+        <div class="important">
+            <h4>Why Use Semantic Elements?</h4>
+            <ul>
+                <li><strong>Accessibility:</strong> They help screen readers and other assistive technologies to understand the page structure and navigate it more easily.</li>
+                <li><strong>SEO (Search Engine Optimization):</strong> They provide more information to search engines, which can help them better understand and rank your content.</li>
+                <li><strong>Maintainability:</strong> They make the code easier to read and maintain for other developers (and for you in the future).</li>
+            </ul>
+        </div>
+
+        <h2>Common Semantic Elements for Page Layout</h2>
+        <p>HTML5 introduced a set of new elements to define the different parts of a web page:</p>
+
+        <div class="semantic-layout">
+            <header><code>&lt;header&gt;</code> - Defines a header for a document or section.</header>
+            <nav><code>&lt;nav&gt;</code> - Defines a container for navigation links.</nav>
+            <section>
+                <code>&lt;section&gt;</code> - Defines a thematic grouping of content.
+                <article><code>&lt;article&gt;</code> - Defines an independent, self-contained piece of content (e.g., a blog post).</article>
+                <article><code>&lt;article&gt;</code> - Another article.</article>
+            </section>
+            <aside><code>&lt;aside&gt;</code> - Defines content aside from the content it is placed in (like a sidebar).</aside>
+            <footer><code>&lt;footer&gt;</code> - Defines a footer for a document or section.</footer>
+        </div>
+
+        <h2>Code for the Layout Above</h2>
+        <pre><code>&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;a href="/"&gt;Home&lt;/a&gt;
+        &lt;a href="/about"&gt;About&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;section&gt;
+        &lt;h2&gt;Main Content Section&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Blog Post Title&lt;/h3&gt;
+            &lt;p&gt;Content of the blog post...&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+
+    &lt;aside&gt;
+        &lt;h3&gt;Related Links&lt;/h3&gt;
+        &lt;ul&gt;...&lt;/ul&gt;
+    &lt;/aside&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;Copyright &copy; 2025&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;</code></pre>
+
+        <h2>Other Semantic Elements</h2>
+        <ul>
+            <li><code>&lt;main&gt;</code>: Specifies the main content of a document. The content inside should be unique to the document.</li>
+            <li><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code>: Used to group media content (like an image) with a caption.</li>
+            <li><code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code>: Creates an interactive widget that the user can open and close.</li>
+            <li><code>&lt;mark&gt;</code>: Defines text that should be marked or highlighted.</li>
+            <li><code>&lt;time&gt;</code>: Defines a specific time (or a date).</li>
+        </ul>
+
+    </div>
+</body>
+</html>

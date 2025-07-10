@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        iframe {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .example {
+            margin-top: 20px;
+        }
+        .warning {
+            background-color: #fffbe6;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Iframes</h1>
+        <p>An HTML iframe is used to display a web page within a web page. The <code>&lt;iframe&gt;</code> tag specifies an inline frame.</p>
+
+        <h2>Basic Iframe Syntax</h2>
+        <p>To create an iframe, you use the <code>&lt;iframe&gt;</code> tag and specify the URL of the page to embed in the <code>src</code> attribute.</p>
+        <pre><code>&lt;iframe src="https://www.w3schools.com"&gt;&lt;/iframe&gt;</code></pre>
+
+        <h3>Example:</h3>
+        <div class="example">
+            <p>Here is an iframe embedding the W3Schools homepage:</p>
+            <iframe src="https://www.w3schools.com" height="300" width="100%" title="W3Schools Free Online Web Tutorials"></iframe>
+        </div>
+
+        <h2>Iframe Attributes</h2>
+        
+        <h3><code>height</code> and <code>width</code></h3>
+        <p>You can use the <code>height</code> and <code>width</code> attributes to specify the size of the iframe in pixels or percentages.</p>
+        <pre><code>&lt;iframe src="..." height="200" width="300"&gt;&lt;/iframe&gt;</code></pre>
+
+        <h3><code>title</code></h3>
+        <p>The <code>title</code> attribute is important for accessibility. Screen readers use it to read what the content of the iframe is.</p>
+        <pre><code>&lt;iframe src="..." title="A description of the iframe content"&gt;&lt;/iframe&gt;</code></pre>
+
+        <h3><code>style</code> (Removing the border)</h3>
+        <p>By default, an iframe has a border around it. You can remove this using CSS and the <code>style</code> attribute.</p>
+        <pre><code>&lt;iframe src="..." style="border:none;"&gt;&lt;/iframe&gt;</code></pre>
+        <div class="example">
+            <p>An iframe with no border:</p>
+            <iframe src="https://www.w3schools.com" style="border:none;" height="200" width="100%" title="Iframe Example"></iframe>
+        </div>
+
+        <h2>Using an Iframe as a Link Target</h2>
+        <p>An iframe can be used as the target frame for a link. This means that when a user clicks a link, the linked document opens inside the iframe.</p>
+        <p>To do this, the <code>target</code> attribute of the link must refer to the <code>name</code> attribute of the iframe.</p>
+
+        <h3>Example:</h3>
+        <div class="example">
+            <iframe height="300px" width="100%" src="/html/Basic Examples.HTML" name="iframe_a" title="Iframe Example"></iframe>
+            <p>
+                <a href="/html/Headings.HTML" target="iframe_a">Open Headings.HTML</a> | 
+                <a href="/html/Paragraphs.HTML" target="iframe_a">Open Paragraphs.HTML</a>
+            </p>
+        </div>
+        <p><strong>Code:</strong></p>
+        <pre><code>&lt;iframe src="demo_iframe.htm" name="iframe_a"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://www.w3schools.com" target="iframe_a"&gt;W3Schools.com&lt;/a&gt;&lt;/p&gt;</code></pre>
+
+        <div class="warning">
+            <h4>Security Note</h4>
+            <p>Many websites, including major ones like Google and Facebook, do not allow themselves to be embedded in iframes. They do this by sending an HTTP header called <code>X-Frame-Options</code> set to <code>DENY</code> or <code>SAMEORIGIN</code> to prevent "clickjacking" attacks.</p>
+        </div>
+
+    </div>
+</body>
+</html>

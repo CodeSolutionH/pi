@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &lt;picture&gt; Element</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The HTML <code>&lt;picture&gt;</code> Element</h1>
+
+        <h2>Description</h2>
+        <p>The HTML <code>&lt;picture&gt;</code> element is a container used to specify multiple <code>&lt;source&gt;</code> elements for a specific <code>&lt;img&gt;</code>. The browser will choose the most suitable source according to the current viewport's width, pixel-density, and other factors, and display the image.</p>
+        <p>This is particularly useful for providing different image versions for different screen sizes (art direction) or for providing different image formats (like WebP or AVIF) for browsers that support them, with a fallback for those that don't.</p>
+
+        <h2>Syntax</h2>
+        <pre><code>&lt;picture&gt;
+   &lt;source media="(min-width: 650px)" srcset="img_pink_flowers.jpg"&gt;
+   &lt;source media="(min-width: 465px)" srcset="img_white_flower.jpg"&gt;
+   &lt;img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"&gt;
+&lt;/picture&gt;
+</code></pre>
+
+        <h2>Example: Art Direction</h2>
+        <p>In this example, the browser will display a different image based on the viewport width. If the width is 650px or more, it shows pink flowers. If it's 465px or more, it shows a white flower. Otherwise, it shows orange flowers.</p>
+
+        <picture>
+           <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/img_pink_flowers.jpg">
+           <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_white_flower.jpg">
+           <img src="https://www.w3schools.com/html/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+        <p><em>Resize the browser window to see the effect.</em></p>
+
+        <h2>Example: Format Selection</h2>
+        <p>Here, the browser can choose a modern, more efficient image format like WebP if it supports it, and fall back to a standard JPG if it doesn't.</p>
+        <pre><code>&lt;picture&gt;
+   &lt;source srcset="image.webp" type="image/webp"&gt;
+   &lt;source srcset="image.jpg" type="image/jpeg"&gt;
+   &lt;img src="image.jpg" alt="Description of image"&gt;
+&lt;/picture&gt;
+</code></pre>
+        <p>This helps in optimizing website performance by serving smaller image files to capable browsers.</p>
+    </div>
+</body>
+</html>
