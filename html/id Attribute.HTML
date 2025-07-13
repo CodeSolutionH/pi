@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML id Attribute</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .important {
+            background-color: #fffbe6;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+
+        /* --- CSS Rule for an ID --- */
+        /* The # selector is used to select an element with a specific id */
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>The HTML <code>id</code> Attribute</h1>
+        <p>The <code>id</code> attribute specifies a unique identifier for an HTML element. The value of the <code>id</code> attribute must be unique within the entire HTML document.</p>
+
+        <div class="important">
+            <p><strong>Key Rule:</strong> No two elements in a document can have the same ID.</p>
+        </div>
+
+        <h2>Using the <code>id</code> Attribute</h2>
+        <p>The <code>id</code> attribute has two primary uses:</p>
+        <ol>
+            <li>As a selector for CSS to apply a unique style to a specific element.</li>
+            <li>As a hook for JavaScript to access and manipulate a specific element.</li>
+        </ol>
+
+        <h3>1. Using <code>id</code> with CSS</h3>
+        <p>CSS can select an element with a specific ID by using the hash (<code>#</code>) character, followed by the ID name.</p>
+
+        <div class="example">
+            <h1 id="myHeader">A Uniquely Styled Header</h1>
+            <p>This header has a unique style applied to it via its ID.</p>
+        </div>
+
+        <h4>The HTML and CSS Code</h4>
+        <p><strong>HTML:</strong></p>
+        <pre><code>&lt;h1 id="myHeader"&gt;A Uniquely Styled Header&lt;/h1&gt;</code></pre>
+
+        <p><strong>CSS (inside <code>&lt;style&gt;</code> tags or an external file):</strong></p>
+        <pre><code>#myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}</code></pre>
+
+        <h3>2. Using <code>id</code> with JavaScript</h3>
+        <p>JavaScript can use the <code>getElementById()</code> method to access an element with a specific ID and manipulate it.</p>
+
+        <div class="example">
+            <p id="demo">Click the button to change this text.</p>
+            <button onclick="changeText()">Change Text</button>
+        </div>
+
+        <h4>The HTML and JavaScript Code</h4>
+        <p><strong>HTML:</strong></p>
+        <pre><code>&lt;p id="demo"&gt;Click the button to change this text.&lt;/p&gt;
+&lt;button onclick="changeText()"&gt;Change Text&lt;/button&gt;</code></pre>
+
+        <p><strong>JavaScript:</strong></p>
+        <pre><code>function changeText() {
+  const element = document.getElementById("demo");
+  element.innerHTML = "Text has been changed!";
+  element.style.color = "red";
+}</code></pre>
+        <script>
+            function changeText() {
+              const element = document.getElementById("demo");
+              element.innerHTML = "Text has been changed!";
+              element.style.color = "red";
+            }
+        </script>
+
+        <h3>3. Using <code>id</code> for Bookmark Links</h3>
+        <p>HTML allows you to create a link that jumps to a specific section (a "bookmark") on the same page. This is done by giving an ID to the target element and creating a link with an <code>href</code> value of <code>#</code> followed by the ID.</p>
+        <div class="example">
+            <p><a href="#section2">Jump to Section 2</a></p>
+            <br><br><br><br><br><br><br><br><br><br>
+            <h2 id="section2">Section 2</h2>
+            <p>You have arrived at section 2!</p>
+        </div>
+        <pre><code>&lt;a href="#section2"&gt;Jump to Section 2&lt;/a&gt;
+
+...
+
+&lt;h2 id="section2"&gt;Section 2&lt;/h2&gt;</code></pre>
+
+        <h2><code>class</code> vs. <code>id</code></h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 1em;">
+            <tr style="background-color:#f2f2f2;">
+                <th style="padding: 8px; border: 1px solid #ddd;">Attribute</th>
+                <th style="padding: 8px; border: 1px solid #ddd;">Rule</th>
+                <th style="padding: 8px; border: 1px solid #ddd;">Usage</th>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;"><code>class</code></td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Can be used on multiple elements. An element can have multiple classes.</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Used for styling groups of elements.</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;"><code>id</code></td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Must be unique. An element can only have one ID.</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">Used for styling a single, unique element or for JavaScript manipulation.</td>
+            </tr>
+        </table>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

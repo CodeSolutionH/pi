@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Colspan & Rowspan</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlight {
+            background-color: #D6EEEE;
+            font-weight: bold;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Table Colspan & Rowspan</h1>
+        <p>HTML tables can have cells that span over multiple rows or columns. This is achieved using the <code>colspan</code> and <code>rowspan</code> attributes on <code>&lt;th&gt;</code> or <code>&lt;td&gt;</code> elements.</p>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>The <code>colspan</code> Attribute</h2>
+        <p>The <code>colspan</code> attribute defines the number of columns a cell should span (merge across).</p>
+
+        <h3>Example:</h3>
+        <p>In this table, the top header cell ("Name") spans two columns.</p>
+        <table>
+            <tr>
+                <th colspan="2" class="highlight">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th colspan="2"&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jill&lt;/td&gt;
+    &lt;td&gt;Smith&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>The <code>rowspan</code> Attribute</h2>
+        <p>The <code>rowspan</code> attribute defines the number of rows a cell should span (merge down).</p>
+
+        <h3>Example:</h3>
+        <p>In this table, the first cell ("Telephone") spans two rows.</p>
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td>Bill Gates</td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="highlight">Telephone:</th>
+                <td>555 77 854</td>
+            </tr>
+            <tr>
+                <td>555 77 855</td>
+            </tr>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name:&lt;/th&gt;
+    &lt;td&gt;Bill Gates&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th rowspan="2"&gt;Telephone:&lt;/th&gt;
+    &lt;td&gt;555 77 854&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;555 77 855&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Complex Example: Both <code>colspan</code> and <code>rowspan</code></h2>
+        <p>You can combine both attributes to create more complex table structures, such as for timetables or calendars.</p>
+        <table>
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+            </tr>
+            <tr>
+                <th>Morning</th>
+                <td rowspan="2" class="highlight">Math</td>
+                <td>Science</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <th>Afternoon</th>
+                <td colspan="2" class="highlight">English</td>
+            </tr>
+             <tr>
+                <th>Evening</th>
+                <td colspan="3">Free Time</td>
+            </tr>
+        </table>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

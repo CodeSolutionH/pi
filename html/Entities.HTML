@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td:first-child {
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Entities</h1>
+        <p>In HTML, some characters are reserved, like the less-than (<code>&lt;</code>) and greater-than (<code>&gt;</code>) signs, which are used to define tags. To display these characters as text, you must use HTML entities.</p>
+        <p>An entity is a piece of text ("string") that begins with an ampersand (<code>&</code>) and ends with a semicolon (<code>;</code>).</p>
+
+        <h2>Commonly Used HTML Entities</h2>
+        <p>Here are some of the most frequently used entities in HTML.</p>
+
+        <h3>Less-than and Greater-than Signs</h3>
+        <p>To display the less-than sign, you must use an entity because it would otherwise be interpreted as the start of a new HTML tag.</p>
+        <pre><code>&lt;p&gt;The &amp;lt;p&amp;gt; tag defines a paragraph.&lt;/p&gt;</code></pre>
+        <p><strong>Result:</strong></p>
+        <p>The &lt;p&gt; tag defines a paragraph.</p>
+
+        <h3>Non-Breaking Space</h3>
+        <p>A common character entity used in HTML is the non-breaking space: <code>&amp;nbsp;</code>. It looks like a regular space, but it prevents a line break from happening at its position. Two or more regular spaces in a row will be collapsed into one by the browser, but multiple <code>&amp;nbsp;</code> entities will not.</p>
+        <pre><code>&lt;p&gt;10&amp;nbsp;km/h&lt;/p&gt; &lt;!-- Prevents breaking between 10 and km/h --&gt;
+&lt;p&gt;This has   many   spaces.&lt;/p&gt;
+&lt;p&gt;This&amp;nbsp;&amp;nbsp;&amp;nbsp;has&amp;nbsp;&amp;nbsp;&amp;nbsp;many&amp;nbsp;&amp;nbsp;&amp;nbsp;spaces.&lt;/p&gt;</code></pre>
+        <p><strong>Result:</strong></p>
+        <p>10&nbsp;km/h</p>
+        <p>This has   many   spaces.</p>
+        <p>This&nbsp;&nbsp;&nbsp;has&nbsp;&nbsp;&nbsp;many&nbsp;&nbsp;&nbsp;spaces.</p>
+
+        <h2>Table of Common Entities</h2>
+        <p>Entities can be referenced by their name or by their number (decimal or hexadecimal).</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Result</th>
+                    <th>Description</th>
+                    <th>Entity Name</th>
+                    <th>Entity Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>non-breaking space</td>
+                    <td><code>&amp;nbsp;</code></td>
+                    <td><code>&amp;#160;</code></td>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td>less than</td>
+                    <td><code>&amp;lt;</code></td>
+                    <td><code>&amp;#60;</code></td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>greater than</td>
+                    <td><code>&amp;gt;</code></td>
+                    <td><code>&amp;#62;</code></td>
+                </tr>
+                <tr>
+                    <td>&amp;</td>
+                    <td>ampersand</td>
+                    <td><code>&amp;amp;</code></td>
+                    <td><code>&amp;#38;</code></td>
+                </tr>
+                <tr>
+                    <td>"</td>
+                    <td>double quotation mark</td>
+                    <td><code>&amp;quot;</code></td>
+                    <td><code>&amp;#34;</code></td>
+                </tr>
+                <tr>
+                    <td>'</td>
+                    <td>single quotation mark</td>
+                    <td><code>&amp;apos;</code></td>
+                    <td><code>&amp;#39;</code></td>
+                </tr>
+                <tr>
+                    <td>¢</td>
+                    <td>cent</td>
+                    <td><code>&amp;cent;</code></td>
+                    <td><code>&amp;#162;</code></td>
+                </tr>
+                <tr>
+                    <td>£</td>
+                    <td>pound</td>
+                    <td><code>&amp;pound;</code></td>
+                    <td><code>&amp;#163;</code></td>
+                </tr>
+                <tr>
+                    <td>¥</td>
+                    <td>yen</td>
+                    <td><code>&amp;yen;</code></td>
+                    <td><code>&amp;#165;</code></td>
+                </tr>
+                <tr>
+                    <td>€</td>
+                    <td>euro</td>
+                    <td><code>&amp;euro;</code></td>
+                    <td><code>&amp;#8364;</code></td>
+                </tr>
+                <tr>
+                    <td>©</td>
+                    <td>copyright</td>
+                    <td><code>&amp;copy;</code></td>
+                    <td><code>&amp;#169;</code></td>
+                </tr>
+                <tr>
+                    <td>®</td>
+                    <td>registered trademark</td>
+                    <td><code>&amp;reg;</code></td>
+                    <td><code>&amp;#174;</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

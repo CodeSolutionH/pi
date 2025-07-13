@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML File Paths</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .path-example {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .folder-structure {
+            border: 1px solid #ddd;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML File Paths</h1>
+        <p>A file path describes the location of a file in a web site's folder structure. File paths are used when linking to external files, like:</p>
+        <ul>
+            <li>Web pages (<code>&lt;a href="..."&gt;</code>)</li>
+            <li>Images (<code>&lt;img src="..."&gt;</code>)</li>
+            <li>Style sheets (<code>&lt;link rel="stylesheet" href="..."&gt;</code>)</li>
+            <li>JavaScript files (<code>&lt;script src="..."&gt;</code>)</li>
+        </ul>
+
+        <p>Let's assume the following folder structure for our examples:</p>
+        <div class="folder-structure">
+            <strong>root/</strong>
+            <br>├── index.html
+            <br>├── contact.html
+            <br>├── <strong>images/</strong>
+            <br>│   └── picture.jpg
+            <br>└── <strong>pages/</strong>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;└── about.html
+        </div>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Absolute File Paths</h2>
+        <p>An absolute file path is the full URL to a file, including the protocol (<code>http://</code> or <code>https://</code>) and the domain name.</p>
+        <h3>Example:</h3>
+        <p>This links to an image on an external website. This is the only way to link to resources on other domains.</p>
+        <div class="path-example">
+            <pre><code>&lt;img src="https://www.w3schools.com/images/picture.jpg" alt="W3Schools logo"&gt;</code></pre>
+        </div>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Relative File Paths</h2>
+        <p>A relative file path points to a file relative to the current page. It does not include the domain name.</p>
+
+        <h3>1. Same Folder</h3>
+        <p>If the target file is in the same folder as the current page, you just need to specify the file name.</p>
+        <p>For example, from <code>index.html</code>, to link to <code>contact.html</code>:</p>
+        <div class="path-example">
+            <pre><code>&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;</code></pre>
+        </div>
+
+        <h3>2. Subfolder</h3>
+        <p>If the target file is in a subfolder, you start the path with the folder name, followed by a slash, and then the file name.</p>
+        <p>For example, from <code>index.html</code>, to show the image <code>picture.jpg</code> from the <code>images</code> folder:</p>
+        <div class="path-example">
+            <pre><code>&lt;img src="images/picture.jpg" alt="A picture"&gt;</code></pre>
+        </div>
+
+        <h3>3. Parent Folder</h3>
+        <p>To link to a file in a folder one level up from the current page, you use two dots (<code>..</code>).</p>
+        <p>For example, from <code>about.html</code> (inside the <code>pages</code> folder), to link back to <code>index.html</code>:</p>
+        <div class="path-example">
+            <pre><code>&lt;a href="../index.html"&gt;Go to Homepage&lt;/a&gt;</code></pre>
+        </div>
+
+        <h3>4. Root-relative Path</h3>
+        <p>A path starting with a forward slash (<code>/</code>) is relative to the root of the domain. This can be very useful because it works the same no matter which page you are on.</p>
+        <p>For example, from <strong>any</strong> page on the site (like <code>about.html</code> or <code>index.html</code>), you can link to the image like this:</p>
+        <div class="path-example">
+            <pre><code>&lt;img src="/images/picture.jpg" alt="A picture"&gt;</code></pre>
+            <p>This tells the browser to start from the root folder of the website and then go into the <code>images</code> folder.</p>
+        </div>
+
+        <h2>Best Practice</h2>
+        <p>It is best practice to use relative file paths (or root-relative paths) for local links within your own website. This way, your website will not be broken if you change your domain name. It also makes your site more portable, allowing you to move it to a new server without having to update all the paths.</p>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

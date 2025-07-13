@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Styles - CSS</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Styles - CSS.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Internal styles can override external ones if the selector is the same or more specific */
+        p {
+            color: darkgreen; /* This will override the color from the external sheet */
+        }
+        .special-paragraph {
+            border: 2px solid darkblue;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #e7f3fe;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+
+    <h1>Styling HTML with CSS</h1>
+    <p id="intro">CSS (Cascading Style Sheets) is used to format the layout of a webpage. It can be used to control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!</p>
+
+    <h2>Three Ways to Insert CSS</h2>
+    <p>There are three ways of inserting a style sheet:</p>
+    <ol>
+        <li><strong>External CSS</strong></li>
+        <li><strong>Internal CSS</strong></li>
+        <li><strong>Inline CSS</strong></li>
+    </ol>
+
+    <hr>
+
+    <h3>1. External CSS</h3>
+    <p>With an external style sheet, you can change the look of an entire website by changing just one file. Each HTML page must include a link to the style sheet with the <code>&lt;link&gt;</code> tag inside the head section.</p>
+    <p>This page is linked to an external stylesheet called "Styles - CSS.css". The blue background of this page is set by that external file.</p>
+    <pre><code>&lt;!-- In your HTML &lt;head&gt; --&gt;
+&lt;link rel="stylesheet" href="Styles - CSS.css"&gt;</code></pre>
+    <pre><code>/* In your Styles - CSS.css file */
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: navy;
+}</code></pre>
+
+    <hr>
+
+    <h3>2. Internal CSS</h3>
+    <p>An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the <code>&lt;style&gt;</code> tag, also inside the head section.</p>
+    <p class="special-paragraph">This paragraph has a special style defined in the internal style sheet of this page. Notice the blue border and background. The text color for all paragraphs (including this one) has also been changed to dark green by the internal style sheet, overriding the external one.</p>
+    <pre><code>&lt;!-- In your HTML &lt;head&gt; --&gt;
+&lt;style&gt;
+  p {
+    color: darkgreen;
+  }
+  .special-paragraph {
+    border: 2px solid darkblue;
+  }
+&lt;/style&gt;</code></pre>
+
+    <hr>
+
+    <h3>3. Inline CSS</h3>
+    <p>An inline style may be used to apply a unique style for a single element. To use inline styles, add the <code>style</code> attribute to the relevant element. The style attribute can contain any CSS property.</p>
+    <p style="color: red; font-size: 20px; text-transform: uppercase;">This paragraph has an inline style.</p>
+    <p>Inline styles have the highest priority and will override both internal and external styles.</p>
+    <pre><code>&lt;p style="color: red; font-size: 20px;"&gt;This paragraph has an inline style.&lt;/p&gt;</code></pre>
+
+    <hr>
+
+    <h2>Cascading Order (Priority)</h2>
+    <p>What style will be used when there is more than one style specified for an HTML element?</p>
+    <p>The priority of styles is as follows (from highest to lowest):</p>
+    <ol>
+        <li><strong>Inline style</strong> (inside an HTML element)</li>
+        <li><strong>External and internal style sheets</strong> (in the head section). If selectors are equal, the one that comes last in the code wins.</li>
+        <li><strong>Browser default</strong></li>
+    </ol>
+    <p>So, an inline style has the highest priority, and will override external and internal styles and browser defaults.</p>
+
+<script src="HTML JavaScript.js"></script></body>
+</html>

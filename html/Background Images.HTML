@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Background Images</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+            height: 300px;
+        }
+
+        /* Basic Background Image */
+        #example1 {
+            background-image: url('https://www.w3schools.com/html/img_girl.jpg');
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-position: right top; /* Position the image */
+            background-attachment: scroll; /* The background scrolls with the page */
+        }
+
+        /* Fullscreen Background Image */
+        #example2-container {
+            /* The image used */
+            background-image: url('https://www.w3schools.com/howto/img_parallax.jpg');
+
+            /* Full height */
+            height: 400px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            margin-top: 20px;
+        }
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+
+    <div class="container">
+        <h1>HTML Background Images</h1>
+        <p>A background image can be specified for most HTML elements using the CSS <code>background-image</code> property.</p>
+
+        <h2>Background Image on an Element</h2>
+        <p>Here, we add a background image to a <code>&lt;div&gt;</code> element. We also specify other background properties to control its behavior.</p>
+        <pre><code>&lt;style&gt;
+.element-with-bg {
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+&lt;/style&gt;
+
+&lt;div class="element-with-bg" style="height: 300px; border: 1px solid black;"&gt;
+  This div has a background image.
+&lt;/div&gt;
+</code></pre>
+        <div id="example1" class="example">
+          <h3>This div has a background image.</h3>
+          <p>The image is positioned at the top right.</p>
+        </div>
+
+        <h2>Background Image on a Page</h2>
+        <p>To set a background image for the entire page, you apply the CSS to the <code>&lt;body&gt;</code> element.</p>
+        <pre><code>&lt;style&gt;
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat; /* Optional: prevents tiling */
+    background-size: cover;       /* Optional: scales the image to cover the entire screen */
+}
+&lt;/style&gt;
+</code></pre>
+        <p><em>(This example is not applied to the whole page to maintain readability, but the code shows how it's done.)</em></p>
+
+        <h2>Fullscreen Responsive Background Image</h2>
+        <p>To have an image cover the entire browser window and scale smoothly, you can use the <code>background-size: cover;</code> property combined with <code>background-attachment: fixed;</code> to create a "sticky" or "parallax" effect.</p>
+        <pre><code>&lt;style&gt;
+.fullscreen-bg {
+    background-image: url('image.jpg');
+    height: 100vh; /* 100% of the viewport height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* This creates the parallax effect */
+}
+&lt;/style&gt;
+</code></pre>
+    </div>
+
+    <div id="example2-container">
+        <div class="caption">
+            <span class="border">PARALLAX EFFECT</span>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+        <p>Scroll down to see the fixed background image create a parallax-like effect. The image stays in place while the content scrolls over it.</p>
+        <p>The key CSS properties are <code>background-attachment: fixed;</code> and <code>background-size: cover;</code>.</p>
+    </div>
+
+<script src="HTML JavaScript.js"></script></body>
+</html>

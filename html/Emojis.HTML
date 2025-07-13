@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Emojis</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .emoji-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 15px;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Emojis</h1>
+        <p>Emojis are characters from the UTF-8 character set. Emojis look like images, or icons, but they are not. They are letters (characters) from the UTF-8 (Unicode) character set.</p>
+
+        <h2>Using Emojis in HTML</h2>
+        <p>To use emojis in an HTML file, you need to ensure the character encoding is set to UTF-8. This is done by adding the <code>&lt;meta charset="UTF-8"&gt;</code> tag inside the <code>&lt;head&gt;</code> element.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My Page with Emojis&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;My First Emoji &amp;#128512;&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h2>How to Add Emojis</h2>
+        <p>You can include emojis in your HTML in a few ways:</p>
+        <ol>
+            <li><strong>Copy and Paste:</strong> The easiest way is to simply copy the emoji from a source like Emojipedia or your operating system's character map and paste it directly into your HTML code.</li>
+            <li><strong>Using Entity Numbers:</strong> You can use the emoji's decimal or hexadecimal reference number.</li>
+        </ol>
+
+        <h2>Examples</h2>
+        <p>Here are some examples of emojis in action:</p>
+        <ul>
+            <li>I love HTML! ❤️</li>
+            <li>Let's go to the beach. 🏖️</li>
+            <li>Time to code. 💻</li>
+        </ul>
+
+        <h3>Code for the examples above:</h3>
+        <pre><code>&lt;p&gt;I love HTML! &amp;#10084;&amp;#65039;&lt;/p&gt; &lt;!-- or just paste ❤️ --&gt;
+&lt;p&gt;Let's go to the beach. &amp;#127958;&amp;#65039;&lt;/p&gt; &lt;!-- or just paste 🏖️ --&gt;
+&lt;p&gt;Time to code. &amp;#128187;&lt;/p&gt; &lt;!-- or just paste 💻 --&gt;</code></pre>
+
+        <h2>A Grid of Emojis</h2>
+        <p>Here is a sample of different emojis you can use:</p>
+        <div class="emoji-grid">
+            <div>&#128512;</div>
+            <div>&#128513;</div>
+            <div>&#128514;</div>
+            <div>&#128515;</div>
+            <div>&#128516;</div>
+            <div>&#128517;</div>
+            <div>&#128518;</div>
+            <div>&#128521;</div>
+            <div>&#128522;</div>
+            <div>&#128525;</div>
+            <div>&#128536;</div>
+            <div>&#128540;</div>
+            <div>&#128548;</div>
+            <div>&#128557;</div>
+            <div>&#128561;</div>
+            <div>&#128564;</div>
+            <div>&#128077;</div>
+            <div>&#128079;</div>
+            <div>&#129309;</div>
+            <div>&#127881;</div>
+        </div>
+
+        <h2>Are Emojis Supported Everywhere?</h2>
+        <p>Emojis are supported by all major operating systems like iOS, Android, macOS, and Windows. However, the visual appearance of an emoji can vary depending on the platform and browser, as each vendor may have its own emoji designs.</p>
+        <p>For example, the "grinning face" emoji (😀) might look slightly different on an iPhone compared to an Android device or a Windows PC.</p>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

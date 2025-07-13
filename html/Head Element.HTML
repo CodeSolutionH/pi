@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Head Element</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .important {
+            background-color: #fffbe6;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>The HTML <code>&lt;head&gt;</code> Element</h1>
+        <p>The <code>&lt;head&gt;</code> element is a container for metadata (data about data) and is placed between the <code>&lt;html&gt;</code> tag and the <code>&lt;body&gt;</code> tag.</p>
+        <p>Metadata is data about the HTML document. It is not displayed on the page itself, but is used by browsers, search engines, and other web services.</p>
+
+        <div class="important">
+            <p><strong>Note:</strong> The content inside the <code>&lt;head&gt;</code> element is not visible in the main browser window.</p>
+        </div>
+
+        <h2>Anatomy of an HTML Document</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;!-- Metadata goes here --&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;!-- Visible page content goes here --&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+
+        <h2>Common Tags Found in the <code>&lt;head&gt;</code></h2>
+        <p>The following tags are commonly placed inside the <code>&lt;head&gt;</code> section:</p>
+
+        <h3>1. The <code>&lt;title&gt;</code> Tag</h3>
+        <p>The <code>&lt;title&gt;</code> tag is <strong>required</strong> in all HTML documents. It defines the title of the document, which is shown in the browser's title bar or in the page's tab. It is also used by search engines for search results.</p>
+        <pre><code>&lt;title&gt;A Meaningful Page Title&lt;/title&gt;</code></pre>
+
+        <h3>2. The <code>&lt;style&gt;</code> Tag</h3>
+        <p>The <code>&lt;style&gt;</code> tag is used to define internal CSS styles for a single HTML page.</p>
+        <pre><code>&lt;style&gt;
+  body {
+    background-color: linen;
+  }
+  h1 {
+    color: maroon;
+  }
+&lt;/style&gt;</code></pre>
+
+        <h3>3. The <code>&lt;link&gt;</code> Tag</h3>
+        <p>The <code>&lt;link&gt;</code> tag is most often used to link to external style sheets (CSS files). It can also be used to add a favicon.</p>
+        <pre><code>&lt;!-- Linking to an external CSS file --&gt;
+&lt;link rel="stylesheet" href="mystyle.css"&gt;
+
+&lt;!-- Adding a favicon --&gt;
+&lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;</code></pre>
+
+        <h3>4. The <code>&lt;meta&gt;</code> Tag</h3>
+        <p>The <code>&lt;meta&gt;</code> tag is used to specify character set, page description, keywords, author of the document, and viewport settings.</p>
+        <pre><code>&lt;!-- Specify the character encoding for the document --&gt;
+&lt;meta charset="UTF-8"&gt;
+
+&lt;!-- Provide a description for search engines --&gt;
+&lt;meta name="description" content="Free Web tutorials"&gt;
+
+&lt;!-- Set the viewport to make the website responsive --&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+
+        <h3>5. The <code>&lt;script&gt;</code> Tag</h3>
+        <p>The <code>&lt;script&gt;</code> tag is used to embed client-side JavaScripts or to link to external JavaScript files. While it can be placed in the <code>&lt;head&gt;</code>, it's often better for performance to place it at the end of the <code>&lt;body&gt;</code> section.</p>
+        <pre><code>&lt;!-- Linking to an external script file --&gt;
+&lt;script src="myscript.js"&gt;&lt;/script&gt;</code></pre>
+
+        <h3>6. The <code>&lt;base&gt;</code> Tag</h3>
+        <p>The <code>&lt;base&gt;</code> tag specifies the base URL and/or target for all relative URLs in a page. A document can only have one <code>&lt;base&gt;</code> element.</p>
+        <pre><code>&lt;base href="https://www.w3schools.com/" target="_blank"&gt;</code></pre>
+
+        <h2>Example of a Complete <code>&lt;head&gt;</code> Section</h2>
+        <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="description" content="An example page"&gt;
+  &lt;meta name="keywords" content="HTML, Head, Meta, Title"&gt;
+  &lt;meta name="author" content="John Doe"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Example Page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;link rel="icon" type="image/png" href="favicon.png"&gt;
+&lt;/head&gt;</code></pre>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

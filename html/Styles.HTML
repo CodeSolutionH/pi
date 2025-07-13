@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Styles</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .warning {
+            background-color: #fffbe6;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Styles using the <code>style</code> Attribute</h1>
+        <p>The HTML <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more. This is known as an "inline style".</p>
+
+        <div class="warning">
+            <p><strong>Note:</strong> While using the <code>style</code> attribute is a quick way to apply styles, it is generally not recommended for styling entire websites. For better maintainability and separation of concerns, you should use external or internal CSS stylesheets. However, it is useful for quick tests or applying a very specific style to a single element.</p>
+        </div>
+
+        <h2>The <code>style</code> Attribute Syntax</h2>
+        <p>The syntax is <code>style="property:value;"</code>, where <code>property</code> is a CSS property and <code>value</code> is a CSS value.</p>
+        <pre><code>&lt;tagname style="property:value; property2:value2;"&gt;...&lt;/tagname&gt;</code></pre>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Examples of Common CSS Properties</h2>
+
+        <h3>Background Color (<code>background-color</code>)</h3>
+        <p>The <code>background-color</code> property defines the background color for an element.</p>
+        <div class="example" style="background-color:powderblue;">
+            <p>This paragraph has a powder blue background.</p>
+        </div>
+        <pre><code>&lt;p style="background-color:powderblue;"&gt;...&lt;/p&gt;</code></pre>
+
+        <h3>Text Color (<code>color</code>)</h3>
+        <p>The <code>color</code> property defines the text color for an element.</p>
+        <div class="example">
+            <p style="color:blue;">This text is blue.</p>
+            <p style="color:red;">This text is red.</p>
+        </div>
+        <pre><code>&lt;p style="color:blue;"&gt;...&lt;/p&gt;
+&lt;p style="color:red;"&gt;...&lt;/p&gt;</code></pre>
+
+        <h3>Font Family (<code>font-family</code>)</h3>
+        <p>The <code>font-family</code> property defines the font to be used for an element.</p>
+        <div class="example">
+            <p style="font-family:verdana;">This is in Verdana font.</p>
+            <p style="font-family:courier;">This is in Courier font.</p>
+        </div>
+        <pre><code>&lt;p style="font-family:verdana;"&gt;...&lt;/p&gt;
+&lt;p style="font-family:courier;"&gt;...&lt;/p&gt;</code></pre>
+
+        <h3>Text Size (<code>font-size</code>)</h3>
+        <p>The <code>font-size</code> property defines the size of the text.</p>
+        <div class="example">
+            <p style="font-size:100%;">This is normal size (100%).</p>
+            <p style="font-size:160%;">This is larger (160%).</p>
+        </div>
+        <pre><code>&lt;p style="font-size:100%;"&gt;...&lt;/p&gt;
+&lt;p style="font-size:160%;"&gt;...&lt;/p&gt;</code></pre>
+
+        <h3>Text Alignment (<code>text-align</code>)</h3>
+        <p>The <code>text-align</code> property defines the horizontal alignment of text in an element.</p>
+        <div class="example">
+            <p style="text-align:center;">This text is centered.</p>
+            <p style="text-align:right;">This text is right-aligned.</p>
+        </div>
+        <pre><code>&lt;p style="text-align:center;"&gt;...&lt;/p&gt;
+&lt;p style="text-align:right;"&gt;...&lt;/p&gt;</code></pre>
+
+        <h2>Combining Multiple Styles</h2>
+        <p>You can apply multiple style properties to one element by separating them with a semicolon.</p>
+        <div class="example">
+            <h2 style="color:tomato; text-align:center; font-family:courier;">A Styled Heading</h2>
+        </div>
+        <pre><code>&lt;h2 style="color:tomato; text-align:center; font-family:courier;"&gt;...&lt;/h2&gt;</code></pre>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

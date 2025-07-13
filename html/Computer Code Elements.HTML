@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Computer Code Elements</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            border: 1px solid #ddd;
+        }
+        code, kbd, samp, var {
+            background-color: #eee;
+            padding: 3px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            border: 1px solid #ddd;
+        }
+        .example-output {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Computer Code Elements</h1>
+        <p>HTML provides several elements for formatting text that represents computer code, keyboard input, variable names, and program output. These are semantic tags that tell the browser what kind of text they contain.</p>
+
+        <h2>The <code>&lt;code&gt;</code> Element</h2>
+        <p>The <code>&lt;code&gt;</code> element is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.</p>
+        <h3>Example:</h3>
+        <div class="example-output">
+            <p>A piece of code: <code>var x = 5;</code></p>
+            <p>Another piece of code: <code>console.log("Hello, World!");</code></p>
+        </div>
+        <pre><code>&lt;p&gt;A piece of code: &lt;code&gt;var x = 5;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Another piece of code: &lt;code&gt;console.log("Hello, World!");&lt;/code&gt;&lt;/p&gt;</code></pre>
+        <p><strong>Note:</strong> The <code>&lt;code&gt;</code> element does not preserve extra whitespace and line breaks. To fix this, you can put the <code>&lt;code&gt;</code> element inside a <code>&lt;pre&gt;</code> (preformatted text) element.</p>
+        <pre><code>&lt;pre&gt;
+&lt;code&gt;
+function greet() {
+  return "Hello!";
+}
+&lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>The <code>&lt;kbd&gt;</code> Element</h2>
+        <p>The <code>&lt;kbd&gt;</code> element is used to define keyboard input. The content inside is displayed in the browser's default monospace font.</p>
+        <h3>Example:</h3>
+        <div class="example-output">
+            <p>Save the document by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+            <p>To quit, type <kbd>exit</kbd> and press <kbd>Enter</kbd>.</p>
+        </div>
+        <pre><code>&lt;p&gt;Save the document by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;To quit, type &lt;kbd&gt;exit&lt;/kbd&gt; and press &lt;kbd&gt;Enter&lt;/kbd&gt;.&lt;/p&gt;</code></pre>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>The <code>&lt;samp&gt;</code> Element</h2>
+        <p>The <code>&lt;samp&gt;</code> element is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.</p>
+        <h3>Example:</h3>
+        <div class="example-output">
+            <p>If you run the program, you will get this output:</p>
+            <p><samp>File not found.<br>Press F1 to continue</samp></p>
+        </div>
+        <pre><code>&lt;p&gt;If you run the program, you will get this output:&lt;/p&gt;
+&lt;p&gt;&lt;samp&gt;File not found.&lt;br&gt;Press F1 to continue&lt;/samp&gt;&lt;/p&gt;</code></pre>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>The <code>&lt;var&gt;</code> Element</h2>
+        <p>The <code>&lt;var&gt;</code> element is used to define a variable in a mathematical expression or a programming context. The content inside is typically displayed in italic.</p>
+        <h3>Example:</h3>
+        <div class="example-output">
+            <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+            <p>In the expression <var>E</var> = <var>m</var><var>c</var><sup>2</sup>, <var>E</var> is the variable for energy.</p>
+        </div>
+        <pre><code>&lt;p&gt;The area of a triangle is: 1/2 x &lt;var&gt;b&lt;/var&gt; x &lt;var&gt;h&lt;/var&gt;...&lt;/p&gt;
+&lt;p&gt;In the expression &lt;var&gt;E&lt;/var&gt; = &lt;var&gt;m&lt;/var&gt;&lt;var&gt;c&lt;/var&gt;&lt;sup&gt;2&lt;/sup&gt;...&lt;/p&gt;</code></pre>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

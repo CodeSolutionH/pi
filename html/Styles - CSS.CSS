@@ -1,0 +1,39 @@
+/* This CSS file is for the Styles - CSS.HTML example page */
+
+/* Affects the entire page */
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles the main heading */
+h1 {
+    color: navy;
+    margin-left: 20px;
+    text-align: center;
+    border-bottom: 2px solid navy;
+    padding-bottom: 10px;
+}
+
+/* Styles all paragraphs */
+p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* This is a class selector, it styles any element with class="note" */
+.note {
+    font-style: italic;
+    color: darkred;
+    background-color: #f9f9f9;
+    border-left: 5px solid darkred;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+/* This is an ID selector, it styles the one element with id="intro" */
+#intro {
+    font-weight: bold;
+    font-size: 1.2em;
+}

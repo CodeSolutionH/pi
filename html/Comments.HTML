@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Comments</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #007400; /* Make comment color green */
+        }
+        .example-output {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .hidden-comment {
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Comments</h1>
+        <p>HTML comments are not displayed in the browser, but they can help document your HTML source code. This is useful for leaving notes for yourself or other developers.</p>
+
+        <h2>Comment Tag Syntax</h2>
+        <p>You can add comments to your HTML source by using the following syntax:</p>
+        <pre><code>&lt;!-- Write your comments here --&gt;</code></pre>
+        <p>Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+
+        <h2>Examples</h2>
+
+        <h3>1. Commenting Out Text</h3>
+        <p>You can place comments anywhere in your HTML document. Here is a comment placed within a paragraph.</p>
+        <div class="example-output">
+            <p>This is a paragraph.</p>
+            <!-- This is a comment that will not be displayed -->
+            <p>This is another paragraph.</p>
+        </div>
+        <p><strong>Code:</strong></p>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;!-- This is a comment that will not be displayed --&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;</code></pre>
+
+        <h3>2. Commenting Out Code (Debugging)</h3>
+        <p>Comments are also great for debugging HTML. You can comment out lines of code to see how a page renders without them, helping you find errors.</p>
+        <div class="example-output">
+            <p>This paragraph is visible.</p>
+            <!--
+            <p>This paragraph is commented out and will not be seen.</p>
+            <img src="some_image.jpg" alt="A hidden image">
+            -->
+            <p>This paragraph is also visible.</p>
+        </div>
+        <p><strong>Code:</strong></p>
+        <pre><code>&lt;p&gt;This paragraph is visible.&lt;/p&gt;
+
+&lt;!--
+&lt;p&gt;This paragraph is commented out and will not be seen.&lt;/p&gt;
+&lt;img src="some_image.jpg" alt="A hidden image"&gt;
+--&gt;
+
+&lt;p&gt;This paragraph is also visible.&lt;/p&gt;</code></pre>
+
+        <h3>3. Conditional Comments (for Internet Explorer)</h3>
+        <p>In the past, special comments were used to target specific versions of the Internet Explorer (IE) browser. This is now largely obsolete but is good to recognize in older codebases.</p>
+        <p><strong>Code Example (Not rendered by modern browsers):</strong></p>
+        <pre><code>&lt;!--[if IE 9]&gt;
+    &lt;p&gt;This content is only displayed in Internet Explorer 9.&lt;/p&gt;
+    &lt;link rel="stylesheet" type="text/css" href="ie9.css"&gt;
+&lt;![endif]--&gt;</code></pre>
+
+        <h2>Important Notes</h2>
+        <ul>
+            <li>Comments are not displayed by the browser.</li>
+            <li>They can be used to explain your code, which can help you when you edit the source code at a later date.</li>
+            <li>You cannot have a comment inside another comment.</li>
+            <li>Comments are visible to anyone who views the page source code. Do not put sensitive information in comments.</li>
+        </ul>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

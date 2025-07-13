@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        img {
+            max-width: 100%; /* Make images responsive */
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .example {
+            margin-top: 20px;
+        }
+        .important {
+            background-color: #fffbe6;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Images</h1>
+        <p>Images can improve the design and the appearance of a web page. In HTML, images are defined with the <code>&lt;img&gt;</code> tag.</p>
+        <p>The <code>&lt;img&gt;</code> tag is an empty element, meaning it contains attributes only and does not have a closing tag.</p>
+
+        <h2>Basic Image Syntax</h2>
+        <p>To display an image, you need two required attributes:</p>
+        <ul>
+            <li><strong><code>src</code></strong> - Specifies the path (URL) to the image.</li>
+            <li><strong><code>alt</code></strong> - Specifies an alternate text for the image.</li>
+        </ul>
+
+        <div class="example">
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli houses in Alberobello, Italy">
+        </div>
+
+        <h3>The Code:</h3>
+        <pre><code>&lt;img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli houses in Alberobello, Italy"&gt;</code></pre>
+
+        <div class="important">
+            <p><strong>The <code>alt</code> attribute is crucial for accessibility.</strong> If an image cannot be displayed (e.g., due to a slow connection, an error in the src path, or if the user uses a screen reader), the value of the <code>alt</code> attribute is displayed instead.</p>
+        </div>
+
+        <h2>Image Size - <code>width</code> and <code>height</code></h2>
+        <p>You can use the <code>width</code> and <code>height</code> attributes to specify the size of an image in pixels. It's a good practice to specify both to prevent layout shifts while the page is loading.</p>
+        
+        <div class="example">
+            <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" width="300" height="400">
+        </div>
+
+        <h3>The Code:</h3>
+        <pre><code>&lt;img src="img_girl.jpg" alt="Girl in a jacket" width="300" height="400"&gt;</code></pre>
+        <p><strong>Note:</strong> You can also use the <code>style</code> attribute to set the width and height with CSS. Using CSS is often more flexible, for example, when creating responsive designs (e.g., <code>style="width:100%;"</code>).</p>
+
+        <h2>Images from Another Server</h2>
+        <p>You can use an absolute URL in the <code>src</code> attribute to link to an image hosted on another website.</p>
+        <pre><code>&lt;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&gt;</code></pre>
+
+        <h2>Animated Images (GIFs)</h2>
+        <p>HTML allows you to use animated images, most commonly in the GIF format.</p>
+        <div class="example">
+            <img src="https://www.w3schools.com/html/programming.gif" alt="Computer Man" width="240" height="240">
+        </div>
+        <pre><code>&lt;img src="programming.gif" alt="Computer Man"&gt;</code></pre>
+
+        <h2>Using an Image as a Link</h2>
+        <p>To use an image as a link, simply put the <code>&lt;img&gt;</code> tag inside an <code>&lt;a&gt;</code> (anchor) tag.</p>
+        <div class="example">
+            <a href="https://www.w3schools.com/html/default.asp">
+                <img src="https://www.w3schools.com/html/smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+            </a>
+        </div>
+        <pre><code>&lt;a href="default.asp"&gt;
+  &lt;img src="smiley.gif" alt="HTML tutorial"&gt;
+&lt;/a&gt;</code></pre>
+
+        <h2>Common Image Formats</h2>
+        <ul>
+            <li><strong>JPEG (or JPG):</strong> Best for photographs. Good compression, but it's "lossy" (loses quality). Does not support transparency.</li>
+            <li><strong>PNG:</strong> Good for graphics with transparency or few colors. "Lossless" compression (no quality loss).</li>
+            <li><strong>GIF:</strong> Best for simple animations. Limited to 256 colors. Supports transparency.</li>
+            <li><strong>SVG:</strong> Scalable Vector Graphics. An XML-based vector image format. It can be scaled to any size without losing quality. Great for logos and icons.</li>
+            <li><strong>WebP:</strong> A modern format developed by Google that provides superior lossless and lossy compression for images on the web. It supports transparency and animation.</li>
+        </ul>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

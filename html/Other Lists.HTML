@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Other List Types</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example {
+            border: 1px solid #ccc;
+            padding: 0 20px 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        dl, ul {
+            background-color: #f9f9f9;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 4px;
+        }
+        dt {
+            font-weight: bold;
+            color: #555;
+        }
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        /* Style for horizontal list */
+        .horizontal-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        .horizontal-list li {
+            float: left;
+        }
+        .horizontal-list li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .horizontal-list li a:hover {
+            background-color: #111;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Other List Types</h1>
+        <p>Besides the common ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>) lists, HTML supports description lists. Additionally, CSS can be used to style lists in many different ways, such as creating horizontal navigation menus.</p>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>HTML Description Lists (<code>&lt;dl&gt;</code>)</h2>
+        <p>A description list is a list of terms, with a description of each term. This is also known as a definition list.</p>
+        <ul>
+            <li>The <code>&lt;dl&gt;</code> tag defines the description list.</li>
+            <li>The <code>&lt;dt&gt;</code> tag defines the term (the name).</li>
+            <li>The <code>&lt;dd&gt;</code> tag describes or defines the term.</li>
+        </ul>
+
+        <h3>Example:</h3>
+        <div class="example">
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- A hot, dark beverage made from roasted coffee beans.</dd>
+                <dt>Milk</dt>
+                <dd>- A white, cold beverage produced by mammals.</dd>
+                <dt>Tea</dt>
+                <dd>- A hot beverage made by infusing dried, crushed leaves in hot water.</dd>
+            </dl>
+        </div>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;dl&gt;
+  &lt;dt&gt;Coffee&lt;/dt&gt;
+  &lt;dd&gt;- A hot, dark beverage made from roasted coffee beans.&lt;/dd&gt;
+  &lt;dt&gt;Milk&lt;/dt&gt;
+  &lt;dd&gt;- A white, cold beverage produced by mammals.&lt;/dd&gt;
+  &lt;dt&gt;Tea&lt;/dt&gt;
+  &lt;dd&gt;- A hot beverage made by infusing dried, crushed leaves in hot water.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Styling Lists with CSS</h2>
+        <p>CSS provides many properties to style lists. You can change the marker type, use images for markers, or remove them entirely.</p>
+
+        <h3>Horizontal List for Navigation</h3>
+        <p>One of the most common uses of styled lists is to create a horizontal navigation menu from a standard HTML unordered list.</p>
+
+        <h3>Example:</h3>
+        <div class="example">
+            <p>This navigation bar is an unordered list styled with CSS:</p>
+            <ul class="horizontal-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+
+        <h4>The Code:</h4>
+        <p><strong>HTML:</strong></p>
+        <pre><code>&lt;ul class="horizontal-list"&gt;
+  &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <p><strong>CSS:</strong></p>
+        <pre><code>.horizontal-list {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Contain floats */
+    background-color: #333;
+}
+
+.horizontal-list li {
+    float: left; /* Make list items appear side-by-side */
+}
+
+.horizontal-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontal-list li a:hover {
+    background-color: #111;
+}</code></pre>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

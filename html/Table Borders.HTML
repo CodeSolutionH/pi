@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Borders</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse; /* This is key for single borders */
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* --- Example 1: No Borders --- */
+        #table-none th, #table-none td {
+            border: none;
+        }
+
+        /* --- Example 2: Standard Border Attribute (Not Recommended) --- */
+        #table-attr {
+            border-collapse: separate; /* Needed to show attribute effect */
+            border-spacing: 1px;
+            background-color: #333;
+        }
+        #table-attr th, #table-attr td {
+            background-color: white;
+        }
+
+        /* --- Example 3: CSS Border Property --- */
+        #table-css th, #table-css td {
+            border: 1px solid #ddd;
+        }
+        #table-css th {
+            background-color: #f2f2f2;
+        }
+
+        /* --- Example 4: Full-Width Bottom Borders --- */
+        #table-bottom-border th, #table-bottom-border td {
+            border: none;
+            border-bottom: 1px solid #ddd;
+        }
+        #table-bottom-border th {
+            border-bottom: 2px solid #333;
+        }
+
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Table Borders</h1>
+        <p>By default, HTML tables are displayed without borders. To add borders, you should use CSS.</p>
+
+        <h2>The Old Way: The <code>border</code> Attribute (Not Recommended)</h2>
+        <p>In older versions of HTML, you could use the <code>border</code> attribute on the <code>&lt;table&gt;</code> tag to add borders.</p>
+        <pre><code>&lt;table border="1"&gt;
+  ...
+&lt;/table&gt;</code></pre>
+        <p>While most browsers still support this, it is <strong>not recommended</strong>. Styling should be done with CSS. This method often results in an undesirable double-border effect.</p>
+        <table id="table-attr" border="1">
+            <tr><th>Firstname</th><th>Lastname</th></tr>
+            <tr><td>Peter</td><td>Griffin</td></tr>
+            <tr><td>Lois</td><td>Griffin</td></tr>
+        </table>
+
+        <hr style="margin: 40px 0;">
+
+        <h2>The Modern Way: Using CSS</h2>
+        <p>The modern and recommended way to add borders to tables is by using the CSS <code>border</code> property.</p>
+
+        <h3>Single Line Borders with <code>border-collapse</code></h3>
+        <p>To get clean, single-line borders, you first add a border to the <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code> elements. Then, you add the <code>border-collapse: collapse;</code> property to the main <code>&lt;table&gt;</code> element. This collapses the borders into a single border.</p>
+        
+        <h4>Example:</h4>
+        <table id="table-css">
+            <tr><th>Firstname</th><th>Lastname</th><th>Age</th></tr>
+            <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
+            <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;!-- HTML --&gt;
+&lt;table&gt;
+  ...
+&lt;/table&gt;
+
+&lt;!-- CSS --&gt;
+&lt;style&gt;
+table {
+  border-collapse: collapse; /* Collapses borders into a single border */
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd; /* Adds a border to all table cells and headers */
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2; /* Adds a background to headers */
+}
+&lt;/style&gt;</code></pre>
+
+        <h3>Alternative Styling: Bottom Borders Only</h3>
+        <p>For a more modern, minimalist look, you can style the table with only horizontal borders.</p>
+        <h4>Example:</h4>
+        <table id="table-bottom-border">
+            <tr><th>Firstname</th><th>Lastname</th><th>Age</th></tr>
+            <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
+            <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;!-- CSS --&gt;
+th, td {
+  border: none; /* Remove all borders first */
+  border-bottom: 1px solid #ddd; /* Add a bottom border to cells */
+}
+
+th {
+  border-bottom: 2px solid #333; /* Make the header border thicker */
+}</code></pre>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

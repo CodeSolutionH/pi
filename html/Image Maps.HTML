@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image Maps</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .instructions {
+            background-color: #eaf5ff;
+            border: 1px solid #3498db;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Image Maps</h1>
+        <p>An image map allows you to create clickable areas on an image. The <code>&lt;map&gt;</code> tag is used to define an image map, and it is linked to an image by using the <code>usemap</code> attribute on the <code>&lt;img&gt;</code> tag.</p>
+        <p>Inside the <code>&lt;map&gt;</code> element, you define the clickable areas using one or more <code>&lt;area&gt;</code> tags.</p>
+
+        <h2>How It Works</h2>
+        <ol>
+            <li>Add an <code>&lt;img&gt;</code> tag with a <code>usemap</code> attribute. The value of <code>usemap</code> starts with a hash (<code>#</code>) and is followed by the name of the map.</li>
+            <li>Create a <code>&lt;map&gt;</code> element with a <code>name</code> attribute that matches the <code>usemap</code> value.</li>
+            <li>Inside the <code>&lt;map&gt;</code>, add <code>&lt;area&gt;</code> elements to define the clickable regions.</li>
+        </ol>
+
+        <h2>Example: A Workspace Image Map</h2>
+        <p>In this example, we have an image of a desk setup. We will create clickable areas for the laptop, the phone, and the coffee cup.</p>
+
+        <div class="example">
+            <!-- The image -->
+            <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+            <!-- The map -->
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="#" onclick="alert('You clicked the computer!')">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="#" onclick="alert('You clicked the phone!')">
+                <area shape="circle" coords="337,300,44" alt="Coffee" href="#" onclick="alert('You clicked the coffee cup!')">
+            </map>
+            <div class="instructions">
+                <p><strong>Click on the computer, the phone, or the coffee cup in the image above.</strong></p>
+            </div>
+        </div>
+
+        <h3>The Code</h3>
+        <pre><code>&lt;!-- Image with a usemap attribute --&gt;
+&lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+
+&lt;!-- The map with a corresponding name --&gt;
+&lt;map name="workmap"&gt;
+  &lt;!-- Clickable rectangular area for the computer --&gt;
+  &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="..."&gt;
+
+  &lt;!-- Clickable rectangular area for the phone --&gt;
+  &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="..."&gt;
+
+  &lt;!-- Clickable circular area for the coffee cup --&gt;
+  &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="..."&gt;
+&lt;/map&gt;</code></pre>
+
+        <h2>The <code>&lt;area&gt;</code> Tag Attributes</h2>
+        
+        <h3><code>shape</code></h3>
+        <p>This attribute defines the shape of the clickable area. Possible values are:</p>
+        <ul>
+            <li><code>rect</code> - defines a rectangular region</li>
+            <li><code>circle</code> - defines a circular region</li>
+            <li><code>poly</code> - defines a polygonal region</li>
+            <li><code>default</code> - defines the entire region</li>
+        </ul>
+
+        <h3><code>coords</code></h3>
+        <p>This attribute specifies the coordinates of the clickable area. The required values depend on the shape:</p>
+        <ul>
+            <li>For <code>shape="rect"</code>: <code>coords="x1,y1,x2,y2"</code> where (x1,y1) is the top-left corner and (x2,y2) is the bottom-right corner.</li>
+            <li>For <code>shape="circle"</code>: <code>coords="x,y,radius"</code> where (x,y) is the center of the circle and <code>radius</code> is the radius.</li>
+            <li>For <code>shape="poly"</code>: <code>coords="x1,y1,x2,y2,...,xn,yn"</code> where each (x,y) pair is a vertex of the polygon.</li>
+        </ul>
+        <p><em>Coordinates are measured in pixels from the top-left corner of the image (0,0).</em></p>
+
+        <h3><code>href</code></h3>
+        <p>Specifies the URL that the area links to. If you don't want a link, you can use <code>nohref</code> or set <code>href="#"</code> and handle the click with JavaScript.</p>
+
+        <h3><code>alt</code></h3>
+        <p>Provides alternative text for the area, which is important for accessibility and is displayed if the image cannot be loaded.</p>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

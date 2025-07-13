@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout Elements and Techniques</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .layout-box {
+            background-color: #eaf5ff;
+            border: 1px solid #3498db;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* --- Layout Examples --- */
+        header.layout-box { background-color: #1abc9c; color: white; }
+        nav.layout-box { background-color: #34495e; color: white; }
+        section.layout-box { background-color: #ecf0f1; }
+        article.layout-box { background-color: #ffffff; border-color: #bdc3c7; margin-left: 20px; }
+        aside.layout-box { background-color: #95a5a6; color: white; }
+        footer.layout-box { background-color: #2c3e50; color: white; }
+
+        /* Flexbox Layout */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex-main {
+            flex: 70%; /* Takes up 70% of the width */
+            padding-right: 20px;
+        }
+        .flex-aside {
+            flex: 30%; /* Takes up 30% of the width */
+        }
+
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Layout Elements and Techniques</h1>
+        <p>Websites often display content in multiple columns, like a magazine or a newspaper. Creating these layouts is a fundamental part of web design.</p>
+
+        <h2>HTML5 Semantic Layout Elements</h2>
+        <p>HTML5 introduced several semantic elements that define the different parts of a web page. Using them makes your HTML easier to read and understand for both developers and search engines.</p>
+        
+        <ul>
+            <li><code>&lt;header&gt;</code> - Defines a header for a document or a section.</li>
+            <li><code>&lt;nav&gt;</code> - Defines a container for navigation links.</li>
+            <li><code>&lt;section&gt;</code> - Defines a section in a document.</li>
+            <li><code>&lt;article&gt;</code> - Defines an independent, self-contained article.</li>
+            <li><code>&lt;aside&gt;</code> - Defines content aside from the page content (like a sidebar).</li>
+            <li><code>&lt;footer&gt;</code> - Defines a footer for a document or a section.</li>
+            <li><code>&lt;details&gt;</code> - Defines additional details that the user can view or hide.</li>
+            <li><code>&lt;summary&gt;</code> - Defines a visible heading for a <code>&lt;details&gt;</code> element.</li>
+        </ul>
+
+        <h3>Example of a Semantic Layout Structure:</h3>
+        <header class="layout-box">&lt;header&gt; - Page Header</header>
+        <nav class="layout-box">&lt;nav&gt; - Navigation Bar</nav>
+        <section class="layout-box">
+            &lt;section&gt;
+            <article class="layout-box">&lt;article&gt; - Main Content</article>
+            <article class="layout-box">&lt;article&gt; - Another Piece of Content</article>
+        </section>
+        <aside class="layout-box">&lt;aside&gt; - Sidebar</aside>
+        <footer class="layout-box">&lt;footer&gt; - Page Footer</footer>
+
+        <pre><code>&lt;body&gt;
+  &lt;header&gt;...&lt;/header&gt;
+  &lt;nav&gt;...&lt;/nav&gt;
+  &lt;section&gt;
+    &lt;article&gt;...&lt;/article&gt;
+  &lt;/section&gt;
+  &lt;aside&gt;...&lt;/aside&gt;
+  &lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+
+        <hr style="margin: 40px 0;">
+
+        <h2>Layout Techniques</h2>
+        <p>There are several ways to create multicolumn layouts, each with its pros and cons. Modern web design primarily uses Flexbox and Grid.</p>
+
+        <h3>1. CSS Flexbox</h3>
+        <p>Flexbox (the Flexible Box Layout Module) is a one-dimensional layout model that offers an easy and clean way to arrange items in a row or a column. It's excellent for component layouts and overall page layouts.</p>
+        
+        <h4>Example: A Main Content and Sidebar Layout</h4>
+        <div class="flex-container">
+            <main class="flex-main">
+                <div class="layout-box" style="height: 200px;">Main Content (flex: 70%)</div>
+            </main>
+            <aside class="flex-aside">
+                <div class="layout-box" style="height: 200px;">Sidebar (flex: 30%)</div>
+            </aside>
+        </div>
+
+        <p><strong>CSS Code:</strong></p>
+        <pre><code>.flex-container {
+    display: flex; /* This enables flexbox */
+}
+
+.flex-main {
+    flex: 70%; /* Main content takes 70% of the width */
+}
+
+.flex-aside {
+    flex: 30%; /* Sidebar takes 30% */
+}</code></pre>
+
+        <h3>2. CSS Grid Layout</h3>
+        <p>CSS Grid is a two-dimensional layout system, meaning it can handle both columns and rows. It is the most powerful layout system available in CSS and is perfect for complex, grid-based page layouts.</p>
+
+        <h3>3. Other Techniques (Older)</h3>
+        <ul>
+            <li><strong>CSS Floats:</strong> A very common technique for many years, but it can be tricky to use correctly (e.g., requires clearing floats). Flexbox and Grid are now preferred.</li>
+            <li><strong>CSS Positioning:</strong> Using <code>position: absolute;</code> or <code>position: relative;</code> can create layouts, but it's not ideal for main page structure as it can make content overlap and be less responsive.</li>
+            <li><strong>HTML Tables:</strong> In the early days of the web, tables were often used for layout. <strong>This is now considered bad practice.</strong> Tables should only be used for displaying tabular data.</li>
+        </ul>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

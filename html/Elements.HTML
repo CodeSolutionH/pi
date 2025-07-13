@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .example-output {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Elements</h1>
+        <p>An HTML element is defined by a start tag, some content, and an end tag. It's the fundamental building block of any HTML document.</p>
+
+        <h2>Anatomy of an HTML Element</h2>
+        <p>The HTML element is everything from the start tag to the end tag:</p>
+        <div style="text-align: center; font-size: 1.2em; margin: 20px 0;">
+            <code>&lt;tagname&gt;</code>Content goes here...<code>&lt;/tagname&gt;</code>
+        </div>
+
+        <h3>Example:</h3>
+        <pre><code>&lt;p&gt;My first paragraph.&lt;/p&gt;</code></pre>
+        <ul>
+            <li>The <strong>start tag</strong> is <code>&lt;p&gt;</code>.</li>
+            <li>The <strong>content</strong> is "My first paragraph.".</li>
+            <li>The <strong>end tag</strong> is <code>&lt;/p&gt;</code>.</li>
+        </ul>
+
+        <h2>Nested HTML Elements</h2>
+        <p>HTML elements can be nested, which means that elements can contain other elements. All HTML documents consist of nested HTML elements.</p>
+        <h3>Example of a Nested Structure:</h3>
+        <div class="example-output">
+            <h1>My Website</h1>
+            <p>This is my <strong>first</strong> paragraph.</p>
+        </div>
+        <p>In this example, the <code>&lt;html&gt;</code> element is the root. It contains the <code>&lt;body&gt;</code> element. The <code>&lt;body&gt;</code> element contains the <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> elements. The <code>&lt;p&gt;</code> element contains a <code>&lt;strong&gt;</code> element.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+  &lt;h1&gt;My Website&lt;/h1&gt;
+  &lt;p&gt;This is my &lt;strong&gt;first&lt;/strong&gt; paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h2>Empty HTML Elements</h2>
+        <p>Some HTML elements have no content. These are called empty elements or void elements. They do not have an end tag.</p>
+        <p>The <code>&lt;br&gt;</code> tag, which defines a line break, is an empty element.</p>
+        <h3>Example:</h3>
+        <div class="example-output">
+            <p>This is a paragraph<br>with a line break.</p>
+        </div>
+        <pre><code>&lt;p&gt;This is a paragraph&lt;br&gt;with a line break.&lt;/p&gt;</code></pre>
+        <p>Other common empty elements include <code>&lt;img&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;link&gt;</code>, and <code>&lt;meta&gt;</code>.</p>
+
+        <h2>HTML Tags vs. Elements</h2>
+        <ul>
+            <li>An <strong>HTML tag</strong> is the part in angle brackets, like <code>&lt;p&gt;</code> or <code>&lt;/p&gt;</code>.</li>
+            <li>An <strong>HTML element</strong> includes the start tag, the content, and the end tag.</li>
+        </ul>
+
+        <h2>Common HTML Elements</h2>
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></td>
+                <td>Defines headings.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;p&gt;</code></td>
+                <td>Defines a paragraph.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;a&gt;</code></td>
+                <td>Defines a hyperlink.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;img&gt;</code></td>
+                <td>Defines an image.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;div&gt;</code></td>
+                <td>Defines a division or a section.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;span&gt;</code></td>
+                <td>Defines a small, inline section.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td>
+                <td>Define lists (unordered, ordered, list item).</td>
+            </tr>
+        </table>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setting the character set is the first and most important step -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Encoding (Character Sets)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .important {
+            background-color: #eaf5ff;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Encoding (Character Sets)</h1>
+        <p>To display an HTML page correctly, a web browser must know the character set (character encoding) used in the file. This ensures that all characters, especially non-English letters and special symbols, are rendered properly.</p>
+
+        <h2>The <code>&lt;meta charset="..."&gt;</code> Declaration</h2>
+        <p>The character set is specified in a <code>&lt;meta&gt;</code> tag inside the <code>&lt;head&gt;</code> section of your HTML document.</p>
+        
+        <div class="important">
+            <p><strong>For modern web pages, the UTF-8 character set is strongly recommended.</strong> It is the most widely used and supports almost all characters and symbols in the world.</p>
+        </div>
+
+        <h3>The Correct Syntax</h3>
+        <p>In HTML5, the syntax is simple and should be placed as early as possible within the <code>&lt;head&gt;</code> element:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h2>Why is Character Encoding Important?</h2>
+        <p>If a browser misinterprets the character set, it can lead to garbled text, often called "mojibake." For example, a character like the Euro symbol (€) or accented letters (é, ö, ñ) might appear as strange symbols like  or Ã©.</p>
+
+        <h3>Example of Correctly Displayed Characters with UTF-8:</h3>
+        <ul>
+            <li>Euro: €</li>
+            <li>Copyright: ©</li>
+            <li>Japanese: こんにちは</li>
+            <li>Russian: Здравствуйте</li>
+            <li>Accented: résumé</li>
+        </ul>
+        <p>All these characters are part of the UTF-8 standard.</p>
+
+        <h2>A Brief History of Character Sets</h2>
+        
+        <h3>ASCII</h3>
+        <p>ASCII was the first major character encoding standard. It used 7 bits and contained 128 characters, including numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ &lt; &gt;.</p>
+
+        <h3>ANSI (Windows-1252)</h3>
+        <p>This was the default character set for early versions of Windows. It was an 8-bit character set with 256 characters, adding support for many special characters common in Western European languages.</p>
+
+        <h3>ISO-8859-1</h3>
+        <p>This was the default character set for HTML 4. It was also an 8-bit set, very similar to Windows-1252. It supported 256 different character codes.</p>
+
+        <h3>UTF-8 (Unicode)</h3>
+        <p>The limitations of 8-bit character sets (only 256 characters) made it impossible to represent all the world's languages. The Unicode standard was developed to solve this.</p>
+        <p>UTF-8 is a variable-width character encoding that can represent every character in the Unicode character set. It is backwards compatible with ASCII and has become the de facto standard for the web. It can handle over 1 million character code points, covering nearly all known languages and symbols.</p>
+
+        <div class="important">
+            <p>Always save your HTML files with UTF-8 encoding in your text editor to prevent issues. Most modern editors like VS Code, Sublime Text, and Atom do this by default.</p>
+        </div>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

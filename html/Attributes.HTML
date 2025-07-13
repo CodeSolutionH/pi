@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Attributes</h1>
+
+        <h2>Description</h2>
+        <p>HTML attributes provide additional information about HTML elements. They are always specified in the start tag and usually come in name/value pairs like <code>name="value"</code>.</p>
+
+        <h2>Commonly Used Attributes</h2>
+
+        <h3>The <code>href</code> Attribute</h3>
+        <p>The <code>&lt;a&gt;</code> (anchor) tag defines a hyperlink. The <code>href</code> attribute specifies the URL of the page the link goes to.</p>
+        <pre><code>&lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;</code></pre>
+        <p><strong>Example:</strong> <a href="https://www.google.com">Visit Google</a></p>
+
+        <h3>The <code>src</code> Attribute</h3>
+        <p>The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image to be displayed.</p>
+        <pre><code>&lt;img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl with a jacket"&gt;</code></pre>
+        <p><strong>Example:</strong> <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl with a jacket" width="200"></p>
+
+        <h3>The <code>width</code> and <code>height</code> Attributes</h3>
+        <p>The <code>&lt;img&gt;</code> tag can also have <code>width</code> and <code>height</code> attributes, which specify the width and height of the image in pixels.</p>
+        <pre><code>&lt;img src="https://www.w3schools.com/html/img_girl.jpg" width="300" height="400"&gt;</code></pre>
+
+        <h3>The <code>alt</code> Attribute</h3>
+        <p>The required <code>alt</code> attribute for the <code>&lt;img&gt;</code> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This is crucial for accessibility.</p>
+        <pre><code>&lt;img src="broken_image.jpg" alt="A beautiful landscape"&gt;</code></pre>
+
+        <h3>The <code>style</code> Attribute</h3>
+        <p>The <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+        <pre><code>&lt;p style="color:blue; font-size:18px;"&gt;This is a styled paragraph.&lt;/p&gt;</code></pre>
+        <p><strong>Example:</strong> <p style="color:blue; font-size:18px;">This is a styled paragraph.</p></p>
+
+        <h3>The <code>lang</code> Attribute</h3>
+        <p>The <code>lang</code> attribute should always be included inside the <code>&lt;html&gt;</code> tag to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h3>The <code>title</code> Attribute</h3>
+        <p>The <code>title</code> attribute defines some extra information about an element. The value of the title attribute will be displayed as a tooltip when you mouse over the element.</p>
+        <pre><code>&lt;p title="I am a tooltip"&gt;Hover over this paragraph.&lt;/p&gt;</code></pre>
+        <p><strong>Example:</strong> <p title="I am a tooltip">Hover over this paragraph.</p></p>
+
+        <h2>Attribute Value Quotes</h2>
+        <p>Attribute values should always be enclosed in quotation marks. Double quotes are the most common, but single quotes are also allowed.</p>
+        <pre><code>&lt;a href="https://www.example.com"&gt;Correct&lt;/a&gt;
+&lt;a href='https://www.example.com'&gt;Correct&lt;/a&gt;
+&lt;a href=https://www.example.com&gt;Incorrect (in some cases)&lt;/a&gt;</code></pre>
+
+        <h2>List of Common Attributes</h2>
+        <table>
+            <tr>
+                <th>Attribute</th>
+                <th>Description</th>
+                <th>Applies to</th>
+            </tr>
+            <tr>
+                <td><code>class</code></td>
+                <td>Specifies one or more classnames for an element (refers to a class in a style sheet)</td>
+                <td>Global</td>
+            </tr>
+            <tr>
+                <td><code>id</code></td>
+                <td>Specifies a unique id for an element</td>
+                <td>Global</td>
+            </tr>
+            <tr>
+                <td><code>style</code></td>
+                <td>Specifies an inline CSS style for an element</td>
+                <td>Global</td>
+            </tr>
+            <tr>
+                <td><code>title</code></td>
+                <td>Specifies extra information about an element (tooltip)</td>
+                <td>Global</td>
+            </tr>
+             <tr>
+                <td><code>href</code></td>
+                <td>Specifies the URL for a link</td>
+                <td><code>&lt;a&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;area&gt;</code>, <code>&lt;base&gt;</code></td>
+            </tr>
+             <tr>
+                <td><code>src</code></td>
+                <td>Specifies the source URL for media</td>
+                <td><code>&lt;img&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code></td>
+            </tr>
+        </table>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

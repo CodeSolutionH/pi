@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links, Colors, and Bookmarks</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        /* --- Link Color Styles --- */
+        .custom-links a:link {
+            color: #007bff; /* Unvisited link */
+            text-decoration: none;
+        }
+        .custom-links a:visited {
+            color: #6f42c1; /* Visited link */
+        }
+        .custom-links a:hover {
+            color: #dc3545; /* Mouse over link */
+            text-decoration: underline;
+        }
+        .custom-links a:active {
+            color: #fd7e14; /* Selected link */
+        }
+
+        /* --- Link as a Button --- */
+        .link-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            border: none;
+        }
+        .link-button:hover {
+            background-color: #218838;
+        }
+
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Links, Colors, and Bookmarks</h1>
+        <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+
+        <h2>HTML Links - The <code>&lt;a&gt;</code> Tag</h2>
+        <p>The HTML <code>&lt;a&gt;</code> tag defines a hyperlink. The most important attribute of the <code>&lt;a&gt;</code> element is the <code>href</code> attribute, which indicates the link's destination.</p>
+        <pre><code>&lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;</code></pre>
+        <div class="example"><a href="https://www.google.com">Visit Google</a></div>
+
+        <h3>The <code>target</code> Attribute</h3>
+        <p>The <code>target</code> attribute specifies where to open the linked document:</p>
+        <ul>
+            <li><code>_self</code>: Default. Opens the document in the same window/tab as it was clicked.</li>
+            <li><code>_blank</code>: Opens the document in a new window or tab.</li>
+            <li><code>_parent</code>: Opens the document in the parent frame.</li>
+            <li><code>_top</code>: Opens the document in the full body of the window.</li>
+        </ul>
+        <pre><code>&lt;a href="https://www.google.com" target="_blank"&gt;Visit Google in a new tab&lt;/a&gt;</code></pre>
+        <div class="example"><a href="https://www.google.com" target="_blank">Visit Google in a new tab</a></div>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Link Colors</h2>
+        <p>By default, a link will appear like this (in most browsers):</p>
+        <ul>
+            <li>An unvisited link is underlined and blue.</li>
+            <li>A visited link is underlined and purple.</li>
+            <li>An active link is underlined and red.</li>
+        </ul>
+        <p>You can change the default colors using CSS pseudo-classes:</p>
+        <pre><code>a:link { /* Style for a normal, unvisited link */
+  color: green;
+}
+a:visited { /* Style for a link the user has visited */
+  color: pink;
+}
+a:hover { /* Style for a link when the user mouses over it */
+  color: red;
+  text-decoration: none;
+}
+a:active { /* Style for a link at the moment it is clicked */
+  color: yellow;
+}</code></pre>
+        <div class="example custom-links">
+            <a href="#">This is a custom styled link.</a> Try hovering and clicking it.
+        </div>
+
+        <h3>Link as a Button</h3>
+        <p>You can also use CSS to style a link to look like a button, which is a common practice in web design.</p>
+        <div class="example">
+            <a href="#" class="link-button">I am a Link Button</a>
+        </div>
+        <pre><code>&lt;a href="#" class="link-button"&gt;I am a Link Button&lt;/a&gt;
+
+&lt;style&gt;
+.link-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+&lt;/style&gt;</code></pre>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>HTML Link Bookmarks</h2>
+        <p>HTML bookmarks allow users to jump to a specific part of a web page. This is useful for long pages.</p>
+        <p><strong>Step 1:</strong> Create the bookmark by giving an <code>id</code> to the element you want to jump to.</p>
+        <pre><code>&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;</code></pre>
+        <p><strong>Step 2:</strong> Create a link that points to that <code>id</code> using a hash character (<code>#</code>).</p>
+        <pre><code>&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;</code></pre>
+
+        <div class="example">
+            <p><a href="#section-bookmark">Jump to the Bookmark Section</a></p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h2 id="section-bookmark">The Bookmark Section</h2>
+            <p>You successfully jumped to this section!</p>
+            <p><a href="#top">Go back to top</a></p>
+        </div>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

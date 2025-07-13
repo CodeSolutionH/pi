@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Styling</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* --- Example 1: Zebra-Striped Table --- */
+        #table-striped th, #table-striped td {
+            border: 1px solid #ddd;
+        }
+        #table-striped th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        /* nth-child selector targets specific rows */
+        #table-striped tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #table-striped tr:hover {
+            background-color: #ddd;
+        }
+
+        /* --- Example 2: Vertical Borders --- */
+        #table-vertical-borders th, #table-vertical-borders td {
+            border-bottom: 1px solid #ddd;
+        }
+        #table-vertical-borders th {
+            border-bottom: 2px solid #333;
+        }
+
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>Advanced HTML Table Styling with CSS</h1>
+        <p>With CSS, you can greatly enhance the appearance of your HTML tables, making them more readable and visually appealing.</p>
+
+        <h2>Zebra-Striped Tables</h2>
+        <p>Zebra-striping (adding alternating background colors to rows) makes it easier to read data across a table. This is achieved with the <code>:nth-child(even)</code> or <code>:nth-child(odd)</code> selector.</p>
+
+        <h3>Example:</h3>
+        <table id="table-striped">
+            <tr><th>Firstname</th><th>Lastname</th><th>Age</th></tr>
+            <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
+            <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
+            <tr><td>John</td><td>Doe</td><td>80</td></tr>
+            <tr><td>Peter</td><td>Jones</td><td>35</td></tr>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;!-- CSS --&gt;
+/* Style the table headers */
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Style every even table row */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Add a hover effect on rows */
+tr:hover {
+  background-color: #ddd;
+}</code></pre>
+
+        <hr style="margin: 40px 0;">
+
+        <h2>Vertical Borders</h2>
+        <p>You can create a clean, modern look by using only horizontal borders (or vertical, if you prefer).</p>
+
+        <h3>Example:</h3>
+        <table id="table-vertical-borders">
+            <tr><th>Firstname</th><th>Lastname</th><th>Savings</th></tr>
+            <tr><td>Peter</td><td>Griffin</td><td>$100</td></tr>
+            <tr><td>Lois</td><td>Griffin</td><td>$150</td></tr>
+            <tr><td>Joe</td><td>Swanson</td><td>$300</td></tr>
+            <tr><td>Cleveland</td><td>Brown</td><td>$250</td></tr>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;!-- CSS --&gt;
+th, td {
+  /* Add only a bottom border to cells */
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  /* Make the header border stronger */
+  border-bottom: 2px solid #333;
+}</code></pre>
+
+        <h2>Responsive Tables</h2>
+        <p>A common problem with HTML tables is that they don't naturally work well on small screens. A table with many columns will often overflow the screen width. To make a table responsive, you can wrap it in a container with <code>overflow-x: auto;</code>. This will add a horizontal scrollbar to the table on small screens, allowing the user to scroll to see all the content.</p>
+
+        <h3>Example:</h3>
+        <div style="overflow-x:auto;">
+            <table style="width: 200%;">
+                 <tr><th>Firstname</th><th>Lastname</th><th>Age</th><th>City</th><th>Country</th></tr>
+                 <tr><td>Jill</td><td>Smith</td><td>50</td><td>New York</td><td>USA</td></tr>
+                 <tr><td>Eve</td><td>Jackson</td><td>94</td><td>London</td><td>UK</td></tr>
+            </table>
+        </div>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;div style="overflow-x:auto;"&gt;
+  &lt;table&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

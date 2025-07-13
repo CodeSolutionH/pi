@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Colors - RGB, HEX, HSL</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .color-box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Colors: RGB, HEX, and HSL</h1>
+        <p>Colors in HTML can be specified using predefined color names, or as RGB, HEX, HSL, or RGBA / HSLA values. They are most often used in CSS to style elements.</p>
+
+        <h2>Color Names</h2>
+        <p>HTML supports 140 standard color names. These are simple, human-readable keywords.</p>
+        <pre><code>&lt;p style="color: Tomato;"&gt;This text is Tomato red.&lt;/p&gt;
+&lt;p style="background-color: DodgerBlue;"&gt;This paragraph has a DodgerBlue background.&lt;/p&gt;</code></pre>
+        <div style="color: Tomato; font-weight: bold;">This text is Tomato red.</div>
+        <div style="background-color: DodgerBlue; color: white; padding: 10px; margin-top: 5px;">This paragraph has a DodgerBlue background.</div>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>HEX (Hexadecimal) Color</h2>
+        <p>A hexadecimal color is specified with: <code>#RRGGBB</code>, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color. Each value can range from 00 to FF (which is 0 to 255 in decimal).</p>
+        <p>For example, <code>#ff0000</code> is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).</p>
+        <pre><code>&lt;h2 style="color: #ff6347;"&gt;This heading is Tomato red in HEX&lt;/h2&gt;
+&lt;h2 style="color: #4169e1;"&gt;This heading is RoyalBlue in HEX&lt;/h2&gt;</code></pre>
+        <div class="color-box" style="background-color: #ff6347;">#ff6347</div>
+        <div class="color-box" style="background-color: #4169e1;">#4169e1</div>
+        <div class="color-box" style="background-color: #3cb371;">#3cb371</div>
+
+        <h2>RGB (Red, Green, Blue) Color</h2>
+        <p>RGB color values are specified with the <code>rgb(red, green, blue)</code> function. Each parameter defines the intensity of the color as an integer between 0 and 255.</p>
+        <p>For example, <code>rgb(255, 0, 0)</code> is displayed as red, because red is set to its highest value (255) and the others are set to 0.</p>
+        <pre><code>&lt;h2 style="color: rgb(255, 99, 71);"&gt;This heading is Tomato red in RGB&lt;/h2&gt;
+&lt;h2 style="color: rgb(65, 105, 225);"&gt;This heading is RoyalBlue in RGB&lt;/h2&gt;</code></pre>
+        <div class="color-box" style="background-color: rgb(255, 99, 71);">rgb(255, 99, 71)</div>
+        <div class="color-box" style="background-color: rgb(65, 105, 225);">rgb(65, 105, 225)</div>
+        <div class="color-box" style="background-color: rgb(60, 179, 113);">rgb(60, 179, 113)</div>
+
+        <h3>RGBA Color</h3>
+        <p>RGBA color values are an extension of RGB with an alpha channel (opacity). It is specified with <code>rgba(red, green, blue, alpha)</code>. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+        <pre><code>&lt;div style="background-color: rgba(255, 99, 71, 0.5);"&gt;Semi-transparent Tomato&lt;/div&gt;</code></pre>
+        <div class="color-box" style="background-color: rgba(255, 99, 71, 0.5);">rgba(..., 0.5)</div>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>HSL (Hue, Saturation, Lightness) Color</h2>
+        <p>HSL color values are specified with the <code>hsl(hue, saturation, lightness)</code> function.</p>
+        <ul>
+            <li><strong>Hue:</strong> A degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</li>
+            <li><strong>Saturation:</strong> A percentage value. 0% means a shade of gray, and 100% is the full color.</li>
+            <li><strong>Lightness:</strong> A percentage value. 0% is black, 50% is normal, and 100% is white.</li>
+        </ul>
+        <pre><code>&lt;h2 style="color: hsl(9, 100%, 64%);"&gt;This heading is Tomato red in HSL&lt;/h2&gt;
+&lt;h2 style="color: hsl(225, 73%, 57%);"&gt;This heading is RoyalBlue in HSL&lt;/h2&gt;</code></pre>
+        <div class="color-box" style="background-color: hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</div>
+        <div class="color-box" style="background-color: hsl(225, 73%, 57%);">hsl(225, 73%, 57%)</div>
+        <div class="color-box" style="background-color: hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</div>
+
+        <h3>HSLA Color</h3>
+        <p>HSLA is just like HSL but adds an alpha channel for opacity, e.g., <code>hsla(9, 100%, 64%, 0.5)</code>.</p>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

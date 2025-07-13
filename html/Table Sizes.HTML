@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Sizes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            table-layout: fixed; /* Helps in respecting width settings */
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* --- Example 1: Width 100% --- */
+        #table-full-width {
+            width: 100%;
+        }
+
+        /* --- Example 2: Specific Column Widths --- */
+        #table-col-width {
+            width: 100%;
+        }
+        #table-col-width .col1 { width: 70%; }
+        #table-col-width .col2 { width: 30%; }
+
+        /* --- Example 3: Specific Row Heights --- */
+        #table-row-height {
+            width: 100%;
+        }
+        #table-row-height th { height: 50px; }
+        #table-row-height td { height: 70px; }
+
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Table Sizes (Width and Height)</h1>
+        <p>By default, the size of a table and its columns is determined automatically by the content inside them. However, you can control the size of the table and its elements using CSS properties like <code>width</code> and <code>height</code>.</p>
+        <p>Using the old <code>width</code> and <code>height</code> attributes on table elements is not recommended. All styling should be done with CSS.</p>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Table Width</h2>
+        <p>You can set the width of the entire table or individual columns.</p>
+
+        <h3>Full-Width Table</h3>
+        <p>To make a table stretch to the full width of its container, set the <code>width</code> property to <code>100%</code>.</p>
+        <table id="table-full-width">
+            <tr><th>Firstname</th><th>Lastname</th><th>Age</th></tr>
+            <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
+            <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
+        </table>
+        <pre><code>table {
+    width: 100%;
+}</code></pre>
+
+        <h3>Specific Column Widths</h3>
+        <p>You can set the width of a specific column by applying a width to either the <code>&lt;th&gt;</code> or <code>&lt;td&gt;</code> elements in that column, or more efficiently, by using the <code>&lt;col&gt;</code> or <code>&lt;colgroup&gt;</code> elements.</p>
+        <table id="table-col-width">
+            <colgroup>
+                <col class="col1">
+                <col class="col2">
+            </colgroup>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>A very long description about the computer that will likely overflow the cell unless handled properly with CSS like text-overflow.</td>
+            </tr>
+        </table>
+        <pre><code>#table-col-width {
+    width: 100%;
+}
+
+/* Using colgroup is efficient */
+#table-col-width .col1 { 
+    width: 30%; 
+}
+#table-col-width .col2 { 
+    width: 70%; 
+}
+
+/* You also need to handle potential text overflow */
+td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}</code></pre>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Table Height</h2>
+        <p>You can set the height of table rows by applying the <code>height</code> property to <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, or <code>&lt;td&gt;</code> elements. The height of a row will be determined by the tallest cell within that row.</p>
+
+        <h3>Example of Row Heights:</h3>
+        <table id="table-row-height">
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+             <tr>
+                <td>February</td>
+                <td>$150</td>
+            </tr>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>th {
+    height: 50px;
+}
+
+td {
+    height: 70px;
+}</code></pre>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

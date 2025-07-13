@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Block and Inline Elements</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example-block div, .example-block p {
+            border: 2px solid #3498db;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #eaf5ff;
+        }
+        .example-inline span, .example-inline a, .example-inline img {
+            border: 2px solid #e74c3c;
+            padding: 5px;
+            background-color: #fdedec;
+        }
+        .example-inline p {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Block and Inline Elements</h1>
+        <p>Every HTML element has a default display value, depending on what type of element it is. The two most common display values are <strong>block</strong> and <strong>inline</strong>.</p>
+
+        <h2>Block-level Elements</h2>
+        <p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+        <p>Common block-level elements include:</p>
+        <ul>
+            <li><code>&lt;div&gt;</code></li>
+            <li><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></li>
+            <li><code>&lt;p&gt;</code></li>
+            <li><code>&lt;form&gt;</code></li>
+            <li><code>&lt;header&gt;</code></li>
+            <li><code>&lt;footer&gt;</code></li>
+            <li><code>&lt;section&gt;</code></li>
+            <li><code>&lt;li&gt;</code></li>
+        </ul>
+
+        <h3>Example of Block-level Elements</h3>
+        <div class="example-block">
+            <div>This <code>&lt;div&gt;</code> is a block-level element.</div>
+            <p>This <code>&lt;p&gt;</code> is also a block-level element. Notice how they each start on a new line and take up the full width.</p>
+        </div>
+        <pre><code>&lt;div&gt;This &lt;div&gt; is a block-level element.&lt;/div&gt;
+&lt;p&gt;This &lt;p&gt; is also a block-level element.&lt;/p&gt;</code></pre>
+
+        <hr style="margin: 40px 0;">
+
+        <h2>Inline Elements</h2>
+        <p>An inline element does not start on a new line and it only takes up as much width as necessary.</p>
+        <p>Common inline elements include:</p>
+        <ul>
+            <li><code>&lt;span&gt;</code></li>
+            <li><code>&lt;a&gt;</code></li>
+            <li><code>&lt;img&gt;</code></li>
+            <li><code>&lt;strong&gt;</code></li>
+            <li><code>&lt;em&gt;</code></li>
+            <li><code>&lt;input&gt;</code></li>
+            <li><code>&lt;label&gt;</code></li>
+        </ul>
+
+        <h3>Example of Inline Elements</h3>
+        <div class="example-inline">
+            <p>
+                This paragraph contains <span>a <code>&lt;span&gt;</code> element</span>, which is inline. 
+                It also includes <a href="#">a link (<code>&lt;a&gt;</code>)</a> and even an 
+                <img src="https://www.w3schools.com/html/smiley.gif" alt="Smiley face" width="20" height="20"> 
+                (<code>&lt;img&gt;</code>). They all flow within the same line.
+            </p>
+        </div>
+        <pre><code>&lt;p&gt;
+    This paragraph contains &lt;span&gt;a &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; element&lt;/span&gt;, which is inline. 
+    It also includes &lt;a href="#"&gt;a link (&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;)&lt;/a&gt; and even an 
+    &lt;img src="smiley.gif" alt="Smiley face" width="20" height="20"&gt; 
+    (&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;). They all flow within the same line.
+&lt;/p&gt;</code></pre>
+
+        <h2>The <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> Elements</h2>
+        <p>The <code>&lt;div&gt;</code> element is a block-level and is often used as a container for other HTML elements. It has no required attributes, but <code>style</code> and <code>class</code> are common.</p>
+        <p>The <code>&lt;span&gt;</code> element is an inline container used to mark up a part of a text, or a part of a document. It provides no visual change by itself but is often used with CSS to style parts of a text.</p>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

@@ -1,0 +1,1 @@
+This is not an actual project, just silly me making some files from a bunch of stuff from programing that gives examples and descriptions to different stuff.

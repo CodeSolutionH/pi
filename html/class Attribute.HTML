@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML class Attribute</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        /* --- CSS Rules for the examples --- */
+
+        /* Style for elements with class="city" */
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* Style for elements with class="note" */
+        .note {
+            font-size: 120%;
+            color: red;
+        }
+
+        /* Style for elements with class="main-text" */
+        .main-text {
+            text-align: center;
+        }
+
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>The HTML <code>class</code> Attribute</h1>
+        <p>The <code>class</code> attribute specifies one or more class names for an HTML element. It is primarily used to point to a class in a style sheet, allowing CSS to select and style specific elements. It can also be used by JavaScript to manipulate elements.</p>
+
+        <h2>Using the <code>class</code> Attribute</h2>
+        <p>In the example below, we have three <code>&lt;div&gt;</code> elements that all share the same class name, <code>city</code>. This allows us to apply the same CSS styles to all of them at once.</p>
+
+        <div class="example">
+            <div class="city">
+                <h2>London</h2>
+                <p>London is the capital of England.</p>
+            </div>
+
+            <div class="city">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div class="city">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+
+        <h3>The HTML and CSS Code</h3>
+        <p><strong>HTML:</strong></p>
+        <pre><code>&lt;div class="city"&gt;
+    &lt;h2&gt;London&lt;/h2&gt;
+    &lt;p&gt;London is the capital of England.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="city"&gt;
+    &lt;h2&gt;Paris&lt;/h2&gt;
+    &lt;p&gt;Paris is the capital of France.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+        <p><strong>CSS (inside <code>&lt;style&gt;</code> tags or an external file):</strong></p>
+        <pre><code>.city {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}</code></pre>
+        <p>The dot (<code>.</code>) in the CSS selector indicates a class name.</p>
+
+        <h2>Multiple Classes</h2>
+        <p>HTML elements can belong to more than one class. To specify multiple classes, separate the class names with a space.</p>
+        <p>In this example, the <code>&lt;h2&gt;</code> element has two classes, <code>note</code> and <code>main-text</code>, and will inherit the CSS properties from both.</p>
+
+        <div class="example">
+            <h2 class="note main-text">A Heading with Multiple Classes</h2>
+            <p>This paragraph does not have the special styling.</p>
+        </div>
+
+        <h3>The HTML and CSS Code</h3>
+        <p><strong>HTML:</strong></p>
+        <pre><code>&lt;h2 class="note main-text"&gt;A Heading with Multiple Classes&lt;/h2&gt;</code></pre>
+
+        <p><strong>CSS:</strong></p>
+        <pre><code>.note {
+    font-size: 120%;
+    color: red;
+}
+
+.main-text {
+    text-align: center;
+}</code></pre>
+
+        <h2>Different Elements Sharing a Class</h2>
+        <p>Different types of elements can share the same class name and get the same styling.</p>
+        <div class="example">
+            <h2 class="city">London</h2>
+            <p class="city">This paragraph also has the 'city' class.</p>
+        </div>
+        <pre><code>&lt;h2 class="city"&gt;London&lt;/h2&gt;
+&lt;p class="city"&gt;This paragraph also has the 'city' class.&lt;/p&gt;</code></pre>
+
+        <h2>Use in JavaScript</h2>
+        <p>The class name can also be used by JavaScript to perform certain tasks for specified elements. For example, you can use <code>document.getElementsByClassName('my-class')</code> to get all elements with a certain class.</p>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

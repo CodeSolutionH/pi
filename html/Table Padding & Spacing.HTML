@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Padding & Spacing</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* --- Example 1: No Padding or Spacing --- */
+        #table-default th, #table-default td {
+            padding: 0;
+        }
+        #table-default {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        /* --- Example 2: CSS Padding --- */
+        #table-padding th, #table-padding td {
+            padding: 15px;
+        }
+        #table-padding {
+            border-collapse: collapse;
+        }
+
+        /* --- Example 3: CSS Border Spacing --- */
+        #table-spacing {
+            border-collapse: separate; /* spacing only works when collapse is separate */
+            border-spacing: 10px; /* horizontal and vertical spacing */
+        }
+        #table-spacing th, #table-spacing td {
+            padding: 10px;
+        }
+
+        /* --- Example 4: Cellpadding & Cellspacing Attributes (Not Recommended) --- */
+        #table-attributes {
+            background-color: #333; /* To visualize spacing */
+        }
+        #table-attributes th, #table-attributes td {
+            background-color: white;
+        }
+
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Table Padding & Spacing</h1>
+        <p>By default, table cells have very little padding and no spacing between their borders. To control the space inside and around the cells, you should use CSS.</p>
+
+        <h2>The Old Way: <code>cellpadding</code> and <code>cellspacing</code> (Not Recommended)</h2>
+        <p>In older HTML, the <code>cellpadding</code> and <code>cellspacing</code> attributes were used on the <code>&lt;table&gt;</code> tag. These attributes are now obsolete and should not be used. Styling should be done with CSS.</p>
+        <ul>
+            <li><code>cellpadding</code>: Specified the space between the cell content and its borders.</li>
+            <li><code>cellspacing</code>: Specified the space between cells.</li>
+        </ul>
+        <table id="table-attributes" cellpadding="10" cellspacing="5">
+            <tr><th>Firstname</th><th>Lastname</th></tr>
+            <tr><td>Peter</td><td>Griffin</td></tr>
+        </table>
+        <pre><code>&lt;table cellpadding="10" cellspacing="5"&gt; ... &lt;/table&gt; &lt;!-- Not recommended --&gt;</code></pre>
+
+        <hr style="margin: 40px 0;">
+
+        <h2>The Modern Way: Using CSS</h2>
+        <p>The modern approach uses the CSS <code>padding</code> and <code>border-spacing</code> properties.</p>
+
+        <h3>1. Cell Padding with CSS <code>padding</code></h3>
+        <p>To control the space between the cell content and the cell border, use the <code>padding</code> property on <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code> elements.</p>
+        
+        <h4>Example:</h4>
+        <table id="table-padding">
+            <tr><th>Firstname</th><th>Lastname</th><th>Age</th></tr>
+            <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
+            <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;!-- CSS --&gt;
+th, td {
+  padding: 15px;
+  text-align: left;
+}</code></pre>
+
+        <h3>2. Cell Spacing with CSS <code>border-spacing</code></h3>
+        <p>To control the distance between the borders of adjacent cells, use the <code>border-spacing</code> property on the <code>&lt;table&gt;</code> element.</p>
+        <p><strong>Note:</strong> The <code>border-spacing</code> property only has an effect if the table's <code>border-collapse</code> property is set to <code>separate</code>.</p>
+
+        <h4>Example:</h4>
+        <table id="table-spacing">
+            <tr><th>Firstname</th><th>Lastname</th></tr>
+            <tr><td>Peter</td><td>Griffin</td></tr>
+            <tr><td>Lois</td><td>Griffin</td></tr>
+        </table>
+
+        <h4>The Code:</h4>
+        <pre><code>&lt;!-- CSS --&gt;
+table {
+  border-collapse: separate;
+  border-spacing: 10px 5px; /* 10px horizontal, 5px vertical */
+}</code></pre>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

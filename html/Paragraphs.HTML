@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Paragraphs</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .example-output {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        p {
+            /* Adding some default margin to paragraphs for clarity */
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 40px 0;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Paragraphs (<code>&lt;p&gt;</code>)</h1>
+        <p>The HTML <code>&lt;p&gt;</code> element defines a paragraph. Paragraphs are block-level elements and are used to structure textual content.</p>
+        <p>Browsers automatically add some white space (a margin) before and after each <code>&lt;p&gt;</code> element. This separates them visually from other content.</p>
+
+        <h2>Basic Paragraph Example</h2>
+        <div class="example-output">
+            <p>This is the first paragraph. It contains some text that introduces the concept of paragraphs in HTML. It is a block of text separated from other blocks.</p>
+            <p>This is the second paragraph. Notice how there is a space between this paragraph and the one above it. This is the default browser styling for the <code>&lt;p&gt;</code> tag.</p>
+        </div>
+        <h3>The Code:</h3>
+        <pre><code>&lt;p&gt;This is the first paragraph...&lt;/p&gt;
+&lt;p&gt;This is the second paragraph...&lt;/p&gt;</code></pre>
+
+        <hr>
+
+        <h2>How Browsers Handle Paragraphs</h2>
+        <p>You cannot be sure how HTML will be displayed. Large or small screens, and resized windows will create different results. With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
+        <p>The browser will automatically remove any extra spaces and lines when the page is displayed:</p>
+        
+        <h3>Example of Collapsed Whitespace:</h3>
+        <div class="example-output">
+            <p>
+                This paragraph
+                contains         a lot of spaces
+                and
+                many           line breaks in the source code,
+                but the        browser ignores it.
+            </p>
+        </div>
+        <h3>The Code:</h3>
+        <pre><code>&lt;p&gt;
+    This paragraph
+    contains         a lot of spaces
+    and
+    many           line breaks in the source code,
+    but the        browser ignores it.
+&lt;/p&gt;</code></pre>
+
+        <hr>
+
+        <h2>The Horizontal Rule (<code>&lt;hr&gt;</code>)</h2>
+        <p>The <code>&lt;hr&gt;</code> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule. It is used to separate content (or define a change) in an HTML page.</p>
+        <p>The <code>&lt;hr&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
+        <div class="example-output">
+            <p>This is some text.</p>
+            <hr style="margin: 20px 0; background: #333; height: 2px;">
+            <p>This is some other text, separated by a horizontal rule.</p>
+        </div>
+        <h3>The Code:</h3>
+        <pre><code>&lt;p&gt;This is some text.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This is some other text...&lt;/p&gt;</code></pre>
+
+        <hr>
+
+        <h2>The Line Break (<code>&lt;br&gt;</code>)</h2>
+        <p>The HTML <code>&lt;br&gt;</code> element defines a line break. Use <code>&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph.</p>
+        <p>Like <code>&lt;hr&gt;</code>, the <code>&lt;br&gt;</code> tag is an empty tag.</p>
+        <div class="example-output">
+            <p>This is a<br>paragraph with<br>line breaks.</p>
+        </div>
+        <h3>The Code:</h3>
+        <pre><code>&lt;p&gt;This is a&lt;br&gt;paragraph with&lt;br&gt;line breaks.&lt;/p&gt;</code></pre>
+
+        <h2>The <code>&lt;pre&gt;</code> Element for Preformatted Text</h2>
+        <p>If you need to preserve whitespace and line breaks exactly as they are written in the source code, use the <code>&lt;pre&gt;</code> tag. This is often used for displaying code snippets.</p>
+        <div class="example-output">
+            <pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+            </pre>
+        </div>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

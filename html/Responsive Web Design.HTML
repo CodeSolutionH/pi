@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- The Responsive Viewport Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .important {
+            background-color: #eaf5ff;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>Responsive Web Design</h1>
+        <p>Responsive Web Design (RWD) is about creating web pages that look good on all devices (desktops, tablets, and phones). A responsive design will automatically adjust for different screen sizes and viewports.</p>
+
+        <div class="important">
+            <p><strong>Key Idea:</strong> The website should adapt to the user's device, not the other way around.</p>
+        </div>
+
+        <h2>1. The Responsive Viewport</h2>
+        <p>To create a responsive website, you must add the following <code>&lt;meta&gt;</code> tag to all your web pages. This gives the browser instructions on how to control the page's dimensions and scaling.</p>
+        <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+        <ul>
+            <li><code>width=device-width</code> sets the width of the page to follow the screen-width of the device.</li>
+            <li><code>initial-scale=1.0</code> sets the initial zoom level when the page is first loaded by the browser.</li>
+        </ul>
+        <p><em>Without this meta tag, web pages designed for desktop will be shrunk down on mobile, making them unreadable without zooming.</em></p>
+
+        <h2>2. Responsive Images</h2>
+        <p>A common way to make images responsive is to use the CSS <code>max-width</code> property. If the <code>max-width</code> property is set to <code>100%</code>, the image will scale down if it has to, but never scale up to be larger than its original size.</p>
+        <pre><code>img {
+    max-width: 100%;
+    height: auto;
+}</code></pre>
+        <p>The image below is responsive. Try resizing your browser window to see the effect.</p>
+        <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Chania, Crete">
+
+        <h2>3. Responsive Text Size</h2>
+        <p>Text size can be set with a responsive unit, like "vw" (viewport width). This way the text size will follow the size of the browser window.</p>
+        <pre><code>h1 {
+    font-size: 10vw; /* 10% of viewport width */
+}</code></pre>
+        <h1 style="font-size:10vw; text-align:center; margin: 20px 0;">Responsive Text</h1>
+
+        <h2>4. Media Queries</h2>
+        <p>Media queries are a key part of responsive design. They allow you to apply different CSS styles for different devices based on characteristics like screen width, height, orientation, etc.</p>
+        <p>In this example, the background color of the body will be lightblue on screens that are 600px wide or wider. On smaller screens, it will be the default.</p>
+        <pre><code>/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+/* ... and so on ... */
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  [class*="col-"] { /* All columns become full-width */
+    width: 100%;
+  }
+}</code></pre>
+
+        <h2>5. Modern Layout Modules: Flexbox and Grid</h2>
+        <p>Modern CSS layout modules like Flexbox and CSS Grid are inherently responsive and make it much easier to build flexible layouts that adapt to different screen sizes without complex media queries.</p>
+        <p>The grid below will automatically wrap columns on smaller screens.</p>
+        <div class="example-grid">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+        </div>
+        <pre><code>.example-grid {
+    display: grid;
+    /* Create as many 250px columns as will fit, let them grow to fill space */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}</code></pre>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>

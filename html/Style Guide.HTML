@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Style Guide and Best Practices</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            border: 1px solid #ddd;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .good-example {
+            border-left: 5px solid #28a745;
+            background-color: #f0fff4;
+        }
+        .bad-example {
+            border-left: 5px solid #dc3545;
+            background-color: #fff0f1;
+        }
+    </style>
+<link rel="stylesheet" href="Styles - CSS.CSS"></head>
+<body><nav>
+    <a href="<picture> Element.HTML"><picture> Element</a> |
+    <a href="Attributes.HTML">Attributes</a> |
+    <a href="Background Images.HTML">Background Images</a> |
+    <a href="Basic Examples.HTML">Basic Examples</a> |
+    <a href="Block and Inline Elements.HTML">Block and Inline Elements</a> |
+    <a href="Colors,RGB,HEX and HSL.HTML">Colors,RGB,HEX and HSL</a> |
+    <a href="Comments.HTML">Comments</a> |
+    <a href="Computer Code Elements.HTML">Computer Code Elements</a> |
+    <a href="Div Element.HTML">Div Element</a> |
+    <a href="Elements.HTML">Elements</a> |
+    <a href="Emojis.HTML">Emojis</a> |
+    <a href="Entities.HTML">Entities</a> |
+    <a href="Favicon.HTML">Favicon</a> |
+    <a href="File Paths.HTML">File Paths</a> |
+    <a href="HTML Encoding (Character Sets).HTML">HTML Encoding (Character Sets)</a> |
+    <a href="HTML JavaScript.HTML">HTML JavaScript</a> |
+    <a href="Head Element.HTML">Head Element</a> |
+    <a href="Headings.HTML">Headings</a> |
+    <a href="Iframes.HTML">Iframes</a> |
+    <a href="Image Maps.HTML">Image Maps</a> |
+    <a href="Images.HTML">Images</a> |
+    <a href="Layout Elements and Techniques.HTML">Layout Elements and Techniques</a> |
+    <a href="Links, Link Colors and Link BookMarks.HTML">Links, Link Colors and Link BookMarks</a> |
+    <a href="Lists.HTML">Lists</a> |
+    <a href="Ordered Lists.HTML">Ordered Lists</a> |
+    <a href="Other Lists.HTML">Other Lists</a> |
+    <a href="Page Title.HTML">Page Title</a> |
+    <a href="Paragraphs.HTML">Paragraphs</a> |
+    <a href="Quotation and Citation Elements.HTML">Quotation and Citation Elements</a> |
+    <a href="Responsive Web Design.HTML">Responsive Web Design</a> |
+    <a href="Semantic Elements.HTML">Semantic Elements</a> |
+    <a href="Style Guide.HTML">Style Guide</a> |
+    <a href="Styles - CSS.HTML">Styles - CSS</a> |
+    <a href="Styles.HTML">Styles</a> |
+    <a href="Symbols.HTML">Symbols</a> |
+    <a href="Table Borders.HTML">Table Borders</a> |
+    <a href="Table Colgroup.HTML">Table Colgroup</a> |
+    <a href="Table Colspan & Rowspan.HTML">Table Colspan & Rowspan</a> |
+    <a href="Table Headers.HTML">Table Headers</a> |
+    <a href="Table Padding & Spacing.HTML">Table Padding & Spacing</a> |
+    <a href="Table Sizes.HTML">Table Sizes</a> |
+    <a href="Table Styling.HTML">Table Styling</a> |
+    <a href="Tables.HTML">Tables</a> |
+    <a href="Text Formatting.HTML">Text Formatting</a> |
+    <a href="Uniform Resource Locators.HTML">Uniform Resource Locators</a> |
+    <a href="Unordered Lists.HTML">Unordered Lists</a> |
+    <a href="XHTML.XHTML">XHTML</a> |
+    <a href="class Attribute.HTML">class Attribute</a> |
+    <a href="id Attribute.HTML">id Attribute</a>
+</nav>
+    <div class="container">
+        <h1>HTML Style Guide and Best Practices</h1>
+        <p>A consistent and clean coding style is important for readability and maintainability. This guide outlines some of the most common best practices for writing HTML.</p>
+
+        <h2>1. Use a Proper Document Structure</h2>
+        <p>Always start your documents with the HTML5 doctype and include the <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> tags. Also, declare the correct language in the <code>lang</code> attribute.</p>
+        <pre class="good-example"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  ...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h2>2. Use Lowercase for Tags and Attributes</h2>
+        <p>While HTML is not case-sensitive, it's a strong convention to use lowercase for all element and attribute names. It improves readability.</p>
+        <pre class="good-example"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="#"&gt;A link&lt;/a&gt;</code></pre>
+        <pre class="bad-example"><code>&lt;P&gt;This is not ideal.&lt;/P&gt;
+&lt;A HREF="#"&gt;This is harder to read.&lt;/A&gt;</code></pre>
+
+        <h2>3. Close All HTML Elements</h2>
+        <p>In HTML5, some elements are self-closing (e.g., <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>) and some tags are optional to close (e.g., <code>&lt;p&gt;</code>). However, it is a good practice to always close all tags for better readability and to avoid unexpected errors.</p>
+        <pre class="good-example"><code>&lt;section&gt;
+  &lt;p&gt;A paragraph.&lt;/p&gt;
+  &lt;p&gt;Another paragraph.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+
+        <h2>4. Quote Attribute Values</h2>
+        <p>Always enclose attribute values in double quotes. This is the most common convention and prevents errors if the value contains spaces.</p>
+        <pre class="good-example"><code>&lt;a href="/products/all-items.html"&gt;All Items&lt;/a&gt;</code></pre>
+        <pre class="bad-example"><code>&lt;a href=/products/all items.html&gt;This is broken&lt;/a&gt;</code></pre>
+
+        <h2>5. Indent Your Code</h2>
+        <p>Indentation makes your code much easier to read by showing the nesting and hierarchy of elements. Use 2 or 4 spaces for each level of indentation.</p>
+        <pre class="good-example"><code>&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <pre class="bad-example"><code>&lt;ul&gt;&lt;li&gt;Coffee&lt;/li&gt;&lt;li&gt;Tea&lt;/li&gt;&lt;/ul&gt;</code></pre>
+
+        <h2>6. Use Semantic HTML</h2>
+        <p>Use HTML elements according to their purpose. Semantic HTML (like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>) improves accessibility, SEO, and code clarity.</p>
+        <pre class="good-example"><code>&lt;nav&gt;
+  &lt;a href="/"&gt;Home&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+        <pre class="bad-example"><code>&lt;div class="navbar"&gt;
+  &lt;a href="/"&gt;Home&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+        <h2>7. Add the <code>alt</code> Attribute to Images</h2>
+        <p>Always include the <code>alt</code> attribute for images. It's crucial for accessibility and is displayed if the image fails to load.</p>
+        <pre class="good-example"><code>&lt;img src="logo.png" alt="Our company logo"&gt;</code></pre>
+
+        <h2>8. Separate Structure (HTML) from Presentation (CSS)</h2>
+        <p>Avoid using inline styles (the <code>style</code> attribute) whenever possible. Keep your CSS in external stylesheets. This makes the code cleaner and easier to manage.</p>
+        <pre class="good-example"><code>&lt;!-- In HTML file --&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;p class="important-note"&gt;A note.&lt;/p&gt;
+
+&lt;!-- In styles.css file --&gt;
+.important-note {
+  color: red;
+  font-weight: bold;
+}</code></pre>
+        <pre class="bad-example"><code>&lt;p style="color:red; font-weight:bold;"&gt;A note.&lt;/p&gt;</code></pre>
+
+        <h2>9. Comment Your Code</h2>
+        <p>Use comments to explain complex parts of your code, but don't over-comment simple things. Comments can help you and others understand your code later.</p>
+        <pre class="good-example"><code>&lt;!-- Main navigation bar for the website --&gt;
+&lt;nav&gt;
+  ...
+&lt;/nav&gt;</code></pre>
+
+    </div>
+<script src="HTML JavaScript.js"></script></body>
+</html>
